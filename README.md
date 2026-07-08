@@ -1,15 +1,10 @@
-<table width="100%">
-  <tr>
-    <td align="left">
-      <strong style="font-size:1.2em">The Real and The Fake.</strong><br>
-      <strong>Mantra:</strong> Question the construct, clarify the meaning.<br>
-      <strong>Tagline:</strong> Learn, then build.
-    </td>
-    <td align="right">
-      <img src="https://www.protee.org/images/Orwells/Orwells.png" alt="Orwells Logo" width="120">
-    </td>
-  </tr>
-</table>
+<img src="https://www.protee.org/images/Orwells/Orwells.png" alt="Orwells Logo" width="120" align="right">
+
+<strong style="font-size:1.2em">The Real and The Fake.</strong><br>
+<strong>Mantra:</strong> Question the construct, clarify the meaning.<br>
+<strong>Tagline:</strong> Learn, then build.
+
+<br clear="both">
 
 <!-- Title and badges -->
 # Orwells – The Real and The Fake
