@@ -1,0 +1,16 @@
+﻿{
+	"aj_versions": [
+		{
+			"t_version": "1.1.10",
+			"d_date": "2026-05-05",
+			"t_title": "ogToolsSuite",
+			"t_markdown": "<!--RNH_1.1.10-->\n<h5> <span class=\"badge badge-success\">1.1.10</span> <span class=\"badge badge-info\">Tuesday 5 May 2026</span> <span class=\"badge badge-light\">ogToolsSuite</span></h5><!--/RNH_1.1.10-->\n\n### All new ogToolsSuite components\n* And new Entities chained propagation system for UI"
+		},
+		{
+			"t_version": "1.1.00",
+			"d_date": "2025-02-26",
+			"t_markdown": "<!--RNH_1.1.00-->\n<h5> <span class=\"badge badge-success\">1.1.00</span> <span class=\"badge badge-info\">Wednesday 26 February 2025</span> <span class=\"badge badge-light\">First release</span></h5><!--/RNH_1.1.00-->\n\n### ![happy](./icons/icn_happy.png) First release of this HDI\n* all new component's set in this app !\n* new architecture",
+			"t_title": "First release"
+		}
+	]
+}

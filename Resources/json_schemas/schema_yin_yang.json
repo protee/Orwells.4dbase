@@ -1,0 +1,134 @@
+﻿{
+	"_utc": "2025-02-19T00:00:00",
+	"_t_version": "1.5.00",
+	"_t_table": "ZEN_SCHEMAS",
+	"_isPublished": true,
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://127.0.0.1:1080/json_schemes/schema_tesserac.json",
+	"title": "TESSERAC record",
+	"description": "",
+	"type": "object",
+	"properties": {
+		"UID": {
+			"description": "Entity UID",
+			"type": "string",
+			"format": "uuid"
+		},
+		"meta": {
+			"type": "object",
+			"properties": {
+				"createdUIDuser": {
+					"type": "string"
+				},
+				"createdUser": {
+					"type": "string"
+				},
+				"createdDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"updatedUIDuser": {
+					"type": "string",
+					"format": "uuid"
+				},
+				"updatedUser": {
+					"type": "string"
+				},
+				"updatedDate": {
+					"type": "string",
+					"format": "date-time"
+				}
+			},
+			"required": [
+				"createdUIDuser",
+				"createdUser",
+				"createdDate",
+				"updatedUIDuser",
+				"updatedUser",
+				"updatedDate"
+			]
+		},
+		"fields": {
+			"type": "object",
+			"properties": {
+				"l_coef": {
+					"type": "integer"
+				},
+				"l_angle": {
+					"type": "integer"
+				},
+				"l_stroke": {
+					"type": "integer"
+				},
+				"l_gap": {
+					"type": "integer"
+				},
+				"l_bkg": {
+					"type": "integer"
+				},
+				"j_bkg": {
+					"type": "object",
+					"properties": { 
+						"l_pattern": {
+							"type": "integer"
+						},
+						"l_colors": {
+							"type": "integer"
+						},
+						"l_rxy": {
+							"type": "integer"
+						},
+						"l_stroke": {
+							"type": "integer"
+						},
+						"l_opacity": {
+							"type": "integer"
+						}
+					}
+				},
+				"is_bkg": {
+					"type": "boolean"
+				},
+				"is_bkg_ellipse": {
+					"type": "boolean"
+				},
+				"is_reverse": {
+					"type": "boolean"
+				},
+				"l_yin": {
+					"type": "integer"
+				},
+				"is_yinStroke": {
+					"type": "boolean"
+				},
+				"is_yinFill": {
+					"type": "boolean"
+				},
+				"l_yinOpacity": {
+					"type": "integer"
+				},
+				"l_yang": {
+					"type": "integer"
+				},
+				"is_yangStroke": {
+					"type": "boolean"
+				},
+				"is_yangFill": {
+					"type": "boolean"
+				},
+				"l_yangOpacity": {
+					"type": "integer"
+				},
+				"l_coef_dots": {
+					"type": "integer"
+				}
+			},
+			"required": [
+			]
+		}
+	},
+	"required": [
+		"meta",
+		"fields"
+	]
+}

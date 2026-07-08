@@ -1,0 +1,1027 @@
+﻿{
+	"_utc": "2025-03-31T00:00:00",
+	"_t_version": "3.0.00",
+	"_t_table": "ZEN_SCHEMAS",
+	"_isPublished": false,
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://127.0.0.1:1080/json_schemes/scheme_clients.json",
+	"title": "Cosmospace V20 - CLIENTS scheme",
+	"description": "Client entity JSON scheme",
+	"type": "object",
+	"properties": {
+		"CLIENTS_ADDRESSES": {
+			"description": "Customer's list of addresses array",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"address": {
+						"description": "Entity address details",
+						"type": "object",
+						"properties": {
+							"streetNumber": {
+								"description": "Address entity street number",
+								"type": "number"
+							},
+							"streetOne": {
+								"description": "Address entity line 01",
+								"type": "string"
+							},
+							"streetTwo": {
+								"description": "Address entity line 02",
+								"type": "string"
+							},
+							"streetThree": {
+								"description": "Address entity line 03",
+								"type": "string"
+							},
+							"zipCode": {
+								"description": "Address entity zip code",
+								"type": "string"
+							},
+							"city": {
+								"description": "Address entity city",
+								"type": "string"
+							},
+							"ISOA3CountryCode": {
+								"description": "Address entity country ISO3",
+								"type": "string"
+							},
+							"state": {
+								"description": "Address entity state for US client",
+								"type": "string"
+							},
+							"county": {
+								"description": "Address entity county for US client",
+								"type": "string"
+							},
+							"latitude": {
+								"description": "Address entity latitude",
+								"type": "string"
+							},
+							"longitude": {
+								"description": "Address entity latitude",
+								"type": "string"
+							}
+						},
+						"required": [
+							"streetOne",
+							"city",
+							"ISOA3CountryCode"
+						]
+					}
+				}
+			}
+		},
+		"UID": {
+			"description": "Entity UID",
+			"type": "string",
+			"format": "uuid"
+		},
+		"meta": {
+			"description": "Customer's metadata informations object",
+			"type": "object",
+			"properties": {
+				"crmId": {
+					"description": "Entity's Mondo DB id",
+					"type": "string"
+				},
+				"createdDate": {
+					"description": "Entity's created date",
+					"type": "string",
+					"format": "date-time"
+				},
+				"updatedDate": {
+					"description": "Entity's modified date",
+					"type": "string",
+					"format": "date-time"
+				},
+				"clientCode": {
+					"description": "Entity's cosmospace clientCode",
+					"type": "string"
+				},
+				"merged": {
+					"description": "Tells if entity has been merged",
+					"type": "boolean"
+				},
+				"mergedWith": {
+					"description": "Target UID if entity has been merged",
+					"type": "string"
+				},
+				"clientHash": {
+					"description": "MD5 hash of customer entity. Used for deduplication",
+					"type": "string"
+				},
+				"isProspect": {
+					"description": "Indicates if customer entity is prospect",
+					"type": "boolean"
+				},
+				"UIDuser": {
+					"description": "Internal UID of last modifing user",
+					"type": "string"
+				},
+				"initiatorId": {
+					"description": "User number",
+					"type": "integer"
+				},
+				"initiatorType": {
+					"type": "string",
+					"enum": [
+						"USER",
+						"PROCESS"
+					]
+				},
+				"mainAddress": {
+					"description": "Customer's main address",
+					"type": "object",
+					"properties": {
+						"streetNumber": {
+							"description": "Address entity street number",
+							"type": "number"
+						},
+						"streetOne": {
+							"description": "Address entity line 01",
+							"type": "string"
+						},
+						"streetTwo": {
+							"description": "Address entity line 02",
+							"type": "string"
+						},
+						"streetThree": {
+							"description": "Address entity line 03",
+							"type": "string"
+						},
+						"zipCode": {
+							"description": "Address entity zip code",
+							"type": "string"
+						},
+						"city": {
+							"description": "Address entity city",
+							"type": "string"
+						},
+						"ISOA3CountryCode": {
+							"description": "Address entity country ISO3",
+							"type": "string"
+						},
+						"state": {
+							"description": "Address entity state for US client",
+							"type": "string"
+						},
+						"county": {
+							"description": "Address entity county for US client",
+							"type": "string"
+						},
+						"latitude": {
+							"description": "Address entity latitude",
+							"type": "string"
+						},
+						"longitude": {
+							"description": "Address entity latitude",
+							"type": "string"
+						}
+					}
+				},
+				"initiatorName": {
+					"description": "User name",
+					"type": "string"
+				},
+				"marketplace": {
+					"type": "string",
+					"enum": [
+						"FR",
+						"EN",
+						"ES"
+					]
+				}
+			},
+			"required": [
+				"createdDate",
+				"updatedDate"
+			]
+		},
+		"core": {
+			"description": "Customer's core informations object",
+			"type": "object",
+			"properties": {
+				"mainPhone": {
+					"type": "string"
+				},
+				"mainEmail": {
+					"type": "string"
+				},
+				"sound": {
+					"type": "string"
+				},
+				"title": {
+					"description": "Client entity salutations",
+					"type": "string"
+				},
+				"lastName": {
+					"description": "Client entity lastName",
+					"type": "string"
+				},
+				"maiden": {
+					"description": "Client entity Maiden",
+					"type": "string"
+				},
+				"firstName": {
+					"description": "Client entity firstName",
+					"type": "string"
+				},
+				"genderType": {
+					"description": "Entity gender type : 0=male, 1=female",
+					"type": "integer"
+				},
+				"jobTitle": {
+					"description": "Client job title",
+					"type": "string"
+				}
+			},
+			"required": [
+				"sound",
+				"lastName",
+				"firstName"
+			]
+		},
+		"classification": {
+			"description": "Customer's classification object",
+			"type": "object",
+			"properties": {
+				"residencyTimezone": {
+					"type": "string"
+				},
+				"clientState": {
+					"type": "string"
+				},
+				"guardianshipType": {
+					"type": "string"
+				},
+				"color": {
+					"description": "Entity color value",
+					"type": "string"
+				},
+				"universalAlias": {
+					"description": "SPG Brain ID",
+					"type": "string"
+				},
+				"contactType": {
+					"description": "Client contact type",
+					"type": "integer"
+				},
+				"paymentsCurrency": {
+					"description": "Default currency for customer",
+					"type": "string",
+					"enum": [
+						"EUR",
+						"USD",
+						""
+					]
+				},
+				"socioProfessionalCategory": {
+					"description": "Client socioProfessionalCategory",
+					"type": "string"
+				},
+				"isBlacklist": {
+					"description": "Indicates if client is blacklisted",
+					"type": "boolean"
+				},
+				"isConsultationForbidden": {
+					"description": "Indicates if client cannot take any more appointment",
+					"type": "boolean"
+				},
+				"consultationForbiddenDate": {
+					"description": "At which date the client has been consultation forbidden",
+					"type": "string",
+					"format": "date-time"
+				},
+				"displayedObservationInAppointmentScope": {
+					"description": "Data to be displayed in appointment",
+					"type": "string"
+				},
+				"handledByForeignFinancialRecoveryFirm": {
+					"description": "Indicates if client is handled by financial service",
+					"type": "boolean"
+				},
+				"isDeceased": {
+					"description": "Indicates if client is deceased",
+					"type": "boolean"
+				},
+				"toTakeCare": {
+					"description": "Indicates if client needs special care",
+					"type": "boolean"
+				},
+				"isUnemployed": {
+					"description": "Indicates if client is isUnemployed",
+					"type": "boolean"
+				},
+				"hasBeenDQEChecked": {
+					"description": "Indicates has been checked by DQE",
+					"type": "boolean"
+				},
+				"isImmediatPaymentRequired": {
+					"description": "Indicates if client is required to pay upfront",
+					"type": "boolean"
+				},
+				"isExtensionTemporaryNotAllowed": {
+					"description": "Indicates if client is temporarly forbidden of extending his consultation",
+					"type": "boolean"
+				},
+				"hasProvenDispute": {
+					"description": "Indicates if client has proven disputes",
+					"type": "boolean"
+				},
+				"refusesToGiveHisEmail": {
+					"description": "Indicates if client refuses to give his email",
+					"type": "boolean"
+				},
+				"refusesToGiveHisResidencyAddress": {
+					"description": "Indicates if client refuses to give his address",
+					"type": "boolean"
+				},
+				"refusesToGiveHisFullResidencyAddress": {
+					"description": "Indicates if client refuses to give his full residency address",
+					"type": "boolean"
+				},
+				"isConsultationTemporaryForbidden": {
+					"description": "Indicates if forbidden of taking more consultations",
+					"type": "boolean"
+				},
+				"temporaryConsultationForbiddenType": {
+					"description": "Specifies which type of consultation is forbidden",
+					"type": "string"
+				},
+				"litigationServiceComment": {
+					"type": "string"
+				},
+				"litigationClass": {
+					"type": "integer"
+				}
+			},
+			"required": [
+				"clientState"
+			]
+		},
+		"clientBirth": {
+			"description": "Customer's birth informations object",
+			"type": "object",
+			"properties": {
+				"localBirthDateTime": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"birthdate": {
+					"description": "Entity birthdate",
+					"type": "string",
+					"format": "date-time"
+				},
+				"customerLocalBirthDate": {
+					"type": "string",
+					"format": "date"
+				},
+				"customerLocalBirthHour": {
+					"type": "string",
+					"format": "time"
+				},
+				"isMissingBirthdate": {
+					"description": "Indicates if entity is missing birthdaate",
+					"type": "boolean"
+				},
+				"withoutBirthdate": {
+					"description": "Flag entity without birthdate",
+					"type": "boolean"
+				},
+				"doesNotKnowHisBirthTime": {
+					"description": "Indicates if clients does not know his birth time",
+					"type": "boolean"
+				},
+				"birthPlace": {
+					"description": "Indicates client's birthplace",
+					"type": "string"
+				},
+				"birthZipCode": {
+					"description": "Zip code of birthplace",
+					"type": "string"
+				},
+				"birthCity": {
+					"description": "City of birthplace",
+					"type": "string"
+				},
+				"birthISOA3CountryCode": {
+					"description": "Country ISO3 code of birthplace",
+					"type": "string"
+				},
+				"birthCounty": {
+					"description": "Birthplace county for US customers",
+					"type": "string"
+				},
+				"birthState": {
+					"description": "Birthplace state for US customers",
+					"type": "string"
+				}
+			},
+			"required": [
+				"localBirthDateTime"
+			]
+		},
+		"clientAstrology": {
+			"description": "Customer's astrology informations object",
+			"type": "object",
+			"properties": {
+				"astrologicalSignId": {
+					"description": "Astrological sign number",
+					"type": "integer"
+				},
+				"astrologicalAscendantId": {
+					"description": "Astrological ascendant sign number",
+					"type": "integer"
+				},
+				"chineseSignId": {
+					"description": "Chinese astrological sign number",
+					"type": "integer"
+				}
+			}
+		},
+		"client_bankAccounts": {
+			"description": "Customer's list of bank accounts array",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"crmId": {
+						"description": "Entity's Mondo DB id",
+						"type": "string"
+					},
+					"bankAccount": {
+						"description": "Bank account name",
+						"type": "string"
+					},
+					"bankCode": {
+						"description": "Bank account intenal code",
+						"type": "string"
+					}
+				},
+				"required": [
+					"bankAccount",
+					"bankCode"
+				]
+			}
+		},
+		"client_cards": {
+			"description": "Customer's list of credit cards array",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"UID": {
+						"description": "Entity CARD UID",
+						"type": "string"
+					},
+					"meta": {
+						"description": "meta object for CARD entity",
+						"type": "object",
+						"properties": {
+							"crmId": {
+								"description": "Entity's Mondo DB id",
+								"type": "string"
+							},
+							"createdDate": {
+								"description": "Entity's created date",
+								"type": "string"
+							},
+							"updatedDate": {
+								"description": "Entity's modified date",
+								"type": "string"
+							},
+							"xNumber": {
+								"description": "Card xNumbert",
+								"type": "string"
+							},
+							"initiatorId": {
+								"description": "User number",
+								"type": "integer"
+							},
+							"initiatorType": {
+								"type": "string",
+								"enum": [
+									"USER",
+									"PROCESS"
+								]
+							},
+							"initiatorName": {
+								"description": "User name",
+								"type": "string"
+							}
+						},
+						"required": [
+							"createdDate",
+							"updatedDate"
+						]
+					},
+					"binInformations": {
+						"type": "object",
+						"properties": {
+							"litigationLevel": {
+								"type": "integer"
+							},
+							"isUnusable": {
+								"type": "boolean"
+							},
+							"isForbidden": {
+								"type": "boolean"
+							},
+							"bin": {
+								"type": "string"
+							},
+							"bankName": {
+								"type": "string"
+							},
+							"network": {
+								"type": "string"
+							},
+							"cardType": {
+								"type": "string"
+							},
+							"isPrepaidCard": {
+								"type": "boolean"
+							}
+						}
+					},
+					"cardHolderFullName": {
+						"type": "string"
+					},
+					"expirationDate": {
+						"type": "string"
+					},
+					"shortExpirationDate": {
+						"type": "string"
+					},
+					"lastDigits": {
+						"type": "string"
+					}
+				}
+			}
+		},
+		"client_communications": {
+			"description": "Customer's list of communication methods array",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"UID": {
+						"description": "Entity COMMDETAILS UID",
+						"type": "string"
+					},
+					"meta": {
+						"description": "meta object for Address entity",
+						"type": "object",
+						"properties": {
+							"crmId": {
+								"description": "Entity's Mondo DB id",
+								"type": "string"
+							},
+							"createdDate": {
+								"description": "Entity's created date",
+								"type": "string",
+								"format": "date-time"
+							},
+							"updatedDate": {
+								"description": "Entity's modified date",
+								"type": "string",
+								"format": "date-time"
+							},
+							"UIDclient": {
+								"description": "Parent UID - client",
+								"type": "string"
+							},
+							"UIDclientCommunications": {
+								"description": "Entity CLIENTS_COMMUNICATION UID",
+								"type": "string"
+							},
+							"UIDuser": {
+								"description": "Internal UID of last modifing user",
+								"type": "string"
+							},
+							"initiatorId": {
+								"description": "User number",
+								"type": "integer"
+							},
+							"initiatorType": {
+								"type": "string",
+								"enum": [
+									"USER",
+									"PROCESS"
+								]
+							},
+							"initiatorName": {
+								"description": "User name",
+								"type": "string"
+							}
+						},
+						"required": [
+							"createdDate",
+							"updatedDate"
+						]
+					},
+					"communicationType": {
+						"description": "communication type",
+						"type": "string",
+						"enum": [
+							"email",
+							"phone",
+							"mail",
+							"mobile",
+							""
+						]
+					},
+					"qualification": {
+						"description": "communication qualification (home, personal,work...)",
+						"type": "string"
+					},
+					"value": {
+						"description": "communication value",
+						"type": "string"
+					},
+					"classification": {
+						"type": "object",
+						"properties": {
+							"isMain": {
+								"description": "Indicates if communication item is main",
+								"type": "boolean"
+							},
+							"isVerified": {
+								"description": "Indicates if communication item has been verified",
+								"type": "boolean"
+							},
+							"isValid": {
+								"description": "Indicates if communication item is valid",
+								"type": "boolean"
+							},
+							"isActive": {
+								"description": "Indicates if communication item is active",
+								"type": "boolean"
+							},
+							"prefix": {
+								"description": "Indicates communication detail prefix",
+								"type": "string"
+							},
+							"isContactable": {
+								"description": "Indicates if communication item can be used to contact client",
+								"type": "boolean"
+							},
+							"isDoubleOptin": {
+								"description": "Indicates if communication item has been double opted in",
+								"type": "boolean"
+							},
+							"isBounced": {
+								"description": "Indicates if communication item has been bounced",
+								"type": "boolean"
+							},
+							"isVerifiedFormat": {
+								"description": "Indicates communication item verified format",
+								"type": "string"
+							},
+							"isVerifiedFromForeignService": {
+								"description": "Indicates if communication item has been verified by a foreign service",
+								"type": "boolean"
+							},
+							"qualifiedRessourceId": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"required": [
+					"communicationType",
+					"value"
+				]
+			}
+		},
+		"client_refusals": {
+			"description": "Customer's list of refusals array",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"UID": {
+						"description": "UID reference of client_refusal entity",
+						"type": "string"
+					},
+					"meta": {
+						"description": "meta object for client_refusal entity",
+						"type": "object",
+						"properties": {
+							"crmId": {
+								"description": "Entity's Mondo DB id",
+								"type": "string"
+							},
+							"createdDate": {
+								"description": "Entity's created date",
+								"type": "string",
+								"format": "date-time"
+							},
+							"updatedDate": {
+								"description": "Entity's modified date",
+								"type": "string",
+								"format": "date-time"
+							},
+							"UIDclient": {
+								"description": "Parent UID - client",
+								"type": "string"
+							},
+							"UIDuser": {
+								"description": "Internal UID of last modifing user",
+								"type": "string"
+							},
+							"initiatorId": {
+								"description": "User number",
+								"type": "integer"
+							},
+							"initiatorType": {
+								"type": "string",
+								"enum": [
+									"USER",
+									"PROCESS"
+								]
+							},
+							"initiatorName": {
+								"description": "User name",
+								"type": "string"
+							}
+						},
+						"required": [
+							"createdDate",
+							"updatedDate"
+						]
+					},
+					"refusalOrigin": {
+						"type": "string"
+					},
+					"refusalType": {
+						"type": "string"
+					},
+					"refusalChannel": {
+						"type": "string"
+					},
+					"refuses": {
+						"type": "boolean"
+					}
+				},
+				"required": [
+					"meta",
+					"refusalOrigin",
+					"refusalType"
+				]
+			}
+		},
+		"loyalty": {
+			"description": "Customer's loyalty",
+			"type": "object",
+			"properties": {
+				"hasLoyalty": {
+					"description": "indicates if customer has loyalty program",
+					"type": "boolean"
+				},
+				"items": {
+					"description": "Array of loyalty entries",
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {}
+					}
+				}
+			}
+		},
+		"lostChecks": {
+			"description": "Customer's list of lost checks",
+			"type": "object",
+			"properties": {
+				"hasLostChecks": {
+					"description": "indicates if customer has lost checks",
+					"type": "boolean"
+				},
+				"items": {
+					"description": "Array of lost checks",
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {}
+					}
+				}
+			}
+		},
+		"comPreferences": {
+			"type": "object",
+			"properties": {
+				"no_sms": {
+					"type": "boolean"
+				},
+				"no_address": {
+					"type": "boolean"
+				},
+				"no_mail": {
+					"type": "boolean"
+				},
+				"no_appointment_call": {
+					"type": "boolean"
+				},
+				"no_phoneCall": {
+					"type": "boolean"
+				},
+				"no_postalmail": {
+					"type": "boolean"
+				},
+				"no_saints": {
+					"type": "boolean"
+				},
+				"no_whatsapp": {
+					"type": "boolean"
+				},
+				"no_dailyhoroscope": {
+					"type": "boolean"
+				},
+				"no_astraltheme": {
+					"type": "boolean"
+				}
+			},
+			"required": [
+				"no_sms",
+				"no_address",
+				"no_mail",
+				"no_appointment_call",
+				"no_phoneCall",
+				"no_postalmail",
+				"no_saints",
+				"no_whatsapp",
+				"no_dailyhoroscope",
+				"no_astraltheme"
+			]
+		},
+		"statistics": {
+			"type": "object",
+			"properties": {
+				"consultation_first": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"consultation_last": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"consultation_next": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"rdv_first": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"rdv_last": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"rdv_next": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"commitment_first": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"commitment_last": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"commitment_next": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"lastPackage": {
+					"type": "string"
+				},
+				"consults": {
+					"type": "integer"
+				},
+				"consults_paid": {
+					"type": "integer"
+				},
+				"consults_partner": {
+					"type": "integer"
+				},
+				"consults_free": {
+					"type": "integer"
+				},
+				"consults_notFree": {
+					"type": "integer"
+				},
+				"consults_af": {
+					"type": "integer"
+				},
+				"consults_partner_af": {
+					"type": "integer"
+				},
+				"consults_free_af": {
+					"type": "integer"
+				},
+				"consults_notFree_af": {
+					"type": "integer"
+				},
+				"ca": {
+					"type": "number"
+				},
+				"ca_partner": {
+					"type": "number"
+				},
+				"ca_free": {
+					"type": "number"
+				},
+				"ca_notFree": {
+					"type": "number"
+				},
+				"ca_af": {
+					"type": "number"
+				},
+				"ca_partner_af": {
+					"type": "number"
+				},
+				"ca_free_af": {
+					"type": "number"
+				},
+				"ca_notFree_af": {
+					"type": "number"
+				},
+				"duration": {
+					"type": "integer"
+				},
+				"canceled": {
+					"type": "number"
+				},
+				"canceled_af": {
+					"type": "number"
+				},
+				"refusals": {
+					"type": "number"
+				},
+				"refusals_af": {
+					"type": "number"
+				},
+				"due": {
+					"type": "number"
+				},
+				"outstanding": {
+					"type": "number"
+				},
+				"cashed": {
+					"type": "number"
+				},
+				"balance": {
+					"type": "number"
+				},
+				"equity": {
+					"type": "number"
+				},
+				"ca_average": {
+					"type": "number"
+				},
+				"ca_partner_average": {
+					"type": "number"
+				},
+				"ca_free_average": {
+					"type": "number"
+				},
+				"ca_notFree_average": {
+					"type": "number"
+				},
+				"duration_average": {
+					"type": "integer"
+				},
+				"amount_rebate": {
+					"type": "number"
+				},
+				"amount_rebate_loyalty": {
+					"type": "number"
+				},
+				"ongoing_package_number": {
+					"type": "number"
+				},
+				"rfm": {
+					"type": "number"
+				},
+				"ltv": {
+					"type": "number"
+				},
+				"cashed_plus": {
+					"type": "number"
+				},
+				"cashed_less": {
+					"type": "number"
+				}
+			}
+		}
+	},
+	"required": [
+		"meta",
+		"core",
+		"comPreferences",
+		"statistics"
+	]
+}

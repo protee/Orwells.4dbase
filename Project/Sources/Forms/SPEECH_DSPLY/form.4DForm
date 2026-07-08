@@ -1,0 +1,275 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"menuBar": "record",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"vL_order": {
+					"type": "input",
+					"top": 23,
+					"left": 276,
+					"width": 32,
+					"height": 13,
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bt_esc": {
+					"type": "button",
+					"top": 4,
+					"left": 4,
+					"width": 11,
+					"height": 8,
+					"sizingY": "move",
+					"dataSource": "",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Sans titre"
+					},
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"vT_cat_lbl": {
+					"type": "input",
+					"top": 19,
+					"left": 645,
+					"width": 440,
+					"height": 23,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 16,
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"sizingX": "grow"
+				},
+				"waz_playOrder": {
+					"type": "subform",
+					"left": 120,
+					"top": 14,
+					"width": 130,
+					"height": 30,
+					"detailForm": "waz_menuBtn",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/waz_playOrder.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"waz_yinYang": {
+					"type": "subform",
+					"left": 20,
+					"top": 14,
+					"width": 100,
+					"height": 30,
+					"detailForm": "waz_menuBtn",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/waz_yinYang.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange",
+						"onUnload"
+					]
+				},
+				"LB": {
+					"type": "listbox",
+					"top": 62,
+					"left": 10,
+					"width": 1075,
+					"height": 486,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"selectionMode": "multiple",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.lb_selection",
+					"currentItemSource": "Form:C1466.lb_current",
+					"currentItemPositionSource": "Form:C1466.lb_position",
+					"selectedItemsSource": "Form:C1466.lb_selected",
+					"metaSource": "Form:C1466.fc._lb_meta_info(This:C1470)",
+					"hideSystemHighlight": false,
+					"headerHeight": "1em",
+					"rowHeight": "2em",
+					"rowHeightAutoMax": "360px",
+					"fontSize": 16,
+					"horizontalPadding": 4,
+					"verticalPadding": 4,
+					"resizingMode": "legacy",
+					"rowHeightAutoMin": "36px",
+					"columns": [
+						{
+							"name": "lb_yin",
+							"width": 530,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "lbh_label1",
+								"text": "Yin",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied1",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"dataSource": "Form:C1466.fc._lb_yinTongue(This:C1470)",
+							"rowHeightAuto": true,
+							"fontSize": 36,
+							"truncateMode": "none",
+							"wordwrap": "normal"
+						},
+						{
+							"name": "lb_yang",
+							"width": 530,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "automatic",
+							"fill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "lbh_label",
+								"text": "Yang",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Pied2",
+								"stroke": "automatic",
+								"fill": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"dataSource": "Form:C1466.fc._lb_yangTongue(This:C1470)",
+							"rowHeightAuto": true,
+							"fontSize": 36,
+							"truncateMode": "none",
+							"wordwrap": "normal"
+						}
+					]
+				},
+				"vL_count": {
+					"type": "input",
+					"top": 23,
+					"left": 316,
+					"width": 32,
+					"height": 13,
+					"dataSourceTypeHint": "integer",
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			},
+			"entryOrder": [
+				"waz_playOrder",
+				"waz_yinYang",
+				"bt_esc",
+				"LB",
+				"vL_count"
+			]
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 193
+}

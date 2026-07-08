@@ -1,0 +1,89 @@
+﻿{
+	"_utc": "2025-02-19T00:00:00",
+	"_t_version": "1.5.00",
+	"_t_table": "ZEN_SCHEMAS",
+	"_isPublished": true,
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://127.0.0.1:1080/json_schemes/schema_multiplay.json",
+	"title": "MULTIPLAY record schema",
+	"description": "",
+	"type": "object",
+	"properties": {
+		"UID": {
+			"description": "Entity UID",
+			"type": "string",
+			"format": "uuid"
+		},
+		"meta": {
+			"description": "Customer's metadata informations object",
+			"type": "object",
+			"properties": {
+				"createdUser": {
+					"description": "Entity's created user",
+					"type": "string"
+				},
+				"createdDate": {
+					"description": "Entity's created date",
+					"type": "string",
+					"format": "date-time"
+				},
+				"updatedUser": {
+					"description": "Entity's updated user",
+					"type": "string"
+				},
+				"updatedDate": {
+					"description": "Entity's modified date",
+					"type": "string",
+					"format": "date-time"
+				}
+			},
+			"required": [
+				"createdDate",
+				"updatedDate"
+			]
+		},
+		"fields": {
+			"type": "object",
+			"properties": {
+				"r_factor": {
+					"type": "number"
+				},
+				"l_type": {
+					"type": "integer"
+				},
+				"l_stroke": {
+					"type": "integer"
+				},
+				"l_lines": {
+					"type": "integer"
+				},
+				"l_dots": {
+					"type": "integer"
+				},
+				"l_dash": {
+					"type": "integer"
+				},
+				"l_count": {
+					"type": "integer"
+				},
+				"l_bkg": {
+					"type": "integer"
+				}
+			},
+			"required": [
+				"meta",
+				"r_factor",
+				"l_type",
+				"l_stroke",
+				"l_lines",
+				"l_dots",
+				"l_dash",
+				"l_count",
+				"l_bkg"
+			]
+		}
+	},
+	"required": [
+		"fields"
+	]
+}

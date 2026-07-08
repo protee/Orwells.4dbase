@@ -1,0 +1,203 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDragOver",
+		"onCloseBox",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Texte3": {
+					"type": "text",
+					"top": 40,
+					"left": 13,
+					"width": 51,
+					"height": 17,
+					"text": "Label"
+				},
+				"field_count1": {
+					"type": "input",
+					"top": 41,
+					"left": 67,
+					"width": 442,
+					"height": 17,
+					"dataSource": "Form:C1466.c4E.label",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"zen_record": {
+					"type": "subform",
+					"top": 5,
+					"left": 5,
+					"width": 340,
+					"height": 24,
+					"dataSourceTypeHint": "object",
+					"detailForm": "zen_record_top",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/zen_record.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"zen_meta": {
+					"type": "subform",
+					"top": 5,
+					"left": 350,
+					"width": 330,
+					"height": 24,
+					"dataSourceTypeHint": "object",
+					"detailForm": "zen_meta_top",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/zen_meta.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					],
+					"dataSource": "",
+					"sizingX": "move",
+					"sizingY": "fixed"
+				},
+				"oO_svg": {
+					"type": "input",
+					"top": 70,
+					"left": 10,
+					"width": 620,
+					"height": 760,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onMouseMove"
+					],
+					"contextMenu": "none",
+					"hideFocusRing": true,
+					"fill": "transparent"
+				},
+				"oO_svg1": {
+					"type": "input",
+					"top": 702,
+					"left": 674,
+					"width": 128,
+					"height": 128,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSourceTypeHint": "picture",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onMouseMove"
+					],
+					"contextMenu": "none",
+					"hideFocusRing": true,
+					"fill": "transparent"
+				},
+				"btn_square": {
+					"type": "pictureButton",
+					"top": 806,
+					"left": 640,
+					"width": 24,
+					"height": 24,
+					"rowCount": 4,
+					"picture": "/RESOURCES/buttons/btn_square.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					],
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"orw_circles_settings": {
+					"type": "subform",
+					"top": 37,
+					"left": 641,
+					"width": 190,
+					"height": 655,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "orw_circles_settings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/orw_circles_settings.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 643,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

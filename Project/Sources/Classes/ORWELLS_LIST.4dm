@@ -1,0 +1,51 @@
+
+Class extends ZEN__TABLES_LIST
+
+Class constructor($vT_LB : Text)
+	Super:C1705($vT_LB)  // Init LB
+	
+Function lb_initialize($vJ_data : Object; $is_local : Boolean)
+	Super:C1706.lb_initialize($vJ_data; $is_local)
+	$vT_LB:=This:C1470.t_LB
+	If ($vT_LB#"")
+		This:C1470.lb_meta_info_set()
+		
+		LISTBOX SET AUTO ROW HEIGHT:C1501(*; $vT_LB; lk row min height:K53:73; 28; lk pixels:K53:22)  // 60 pixels for min value
+		LISTBOX SET AUTO ROW HEIGHT:C1501(*; $vT_LB; lk row max height:K53:74; 250; lk pixels:K53:22)  //and 100 pixels for max value
+		$vT_column:=This:C1470.get_column("yinTongue")
+		LISTBOX SET PROPERTY:C1440(*; $vT_column; lk auto row height:K53:72; lk yes:K53:69)
+		LISTBOX SET PROPERTY:C1440(*; $vT_column; lk allow wordwrap:K53:39; lk yes:K53:69)
+		$vT_column:=This:C1470.get_column("yangTongue")
+		LISTBOX SET PROPERTY:C1440(*; $vT_column; lk auto row height:K53:72; lk yes:K53:69)
+		LISTBOX SET PROPERTY:C1440(*; $vT_column; lk allow wordwrap:K53:39; lk yes:K53:69)
+	End if 
+	
+Function lb_meta_info($c4E_entity : 4D:C1709.Entity)->$vJ_meta : Object
+	var $vL_colors : Integer
+	var $vT_color_stroke; $vT_color_fill : Text
+	$vJ_meta:=New object:C1471
+	$vL_colors:=$c4E_entity.colors
+	//woc_sp_colors_to_html($vL_colors; ->$vT_color_stroke; ->$vT_color_fill; True)
+	//$vJ_meta.stroke:=$vT_color_stroke
+	//$vJ_meta.fill:=$vT_color_fill
+	$vJ_meta_cell:=New object:C1471
+	$vJ_meta.cell:=$vJ_meta_cell
+	$vT_column:=This:C1470.get_column("yinTongue")
+	This:C1470.meta_cell_colors($vJ_meta_cell; $vT_column; $vL_colors)
+	$vJ_meta.cell:=$vJ_meta_cell
+	$vT_column:=This:C1470.get_column("yangTongue")
+	This:C1470.meta_cell_colors($vJ_meta_cell; $vT_column; $vL_colors)
+	
+	
+Function lb_active_img($cE_orwells : cs:C1710.ORWELLSEntity)->$vO_img : Picture  // Form.fc.lb_active_img(This)
+	$vO_img:=This:C1470.get_icon_img($cE_orwells.isActive)
+	
+	
+Function lb_colors_img($cE_orwells : cs:C1710.ORWELLSEntity)->$vO_img : Picture
+	var $vL_colors; $vL_size; $vL_shape : Integer
+	$vL_colors:=$cE_orwells.colors
+	$vL_shape:=-3
+	$vL_size:=20
+	$vO_img:=woc_sp_shape_get($vL_size; $vL_size; $vL_colors; $vL_shape; 3)
+	
+	

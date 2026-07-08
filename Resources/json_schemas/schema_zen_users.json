@@ -1,0 +1,68 @@
+﻿{
+	"_utc": "2024-05-28T00:00:00",
+	"_t_version": "1.1.32",
+	"_t_table": "ZEN_SCHEMAS",
+	"_isPublished": true,
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://127.0.0.1:1080/json_schemes/schema_.json",
+	"title": "Cosmospace v20 - ZEN_USERS scheme",
+	"description": "",
+	"type": "object",
+	"properties": {
+		"userSettings": {
+			"type": "object",
+			"properties": {
+				"is_modif_record": {
+					"type": "boolean"
+				},
+				"is_modif_list": {
+					"type": "boolean"
+				},
+				"is_as_navigate": {
+					"type": "boolean"
+				},
+				"is_as_modify": {
+					"type": "boolean"
+				},
+				"is_as_closeBox": {
+					"type": "boolean"
+				},
+				"_importId": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"is_modif_record",
+				"is_modif_list",
+				"is_as_navigate",
+				"is_as_modify",
+				"is_as_closeBox"
+			]
+		},
+		"meta": {
+			"type": "object",
+			"properties": {
+				"updatedDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"createdDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"UIDuser": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"updatedDate",
+				"createdDate",
+				"UIDuser"
+			]
+		}
+	},
+	"required": [
+		"userSettings",
+		"meta"
+	]
+}

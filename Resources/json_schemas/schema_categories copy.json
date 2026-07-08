@@ -1,0 +1,49 @@
+﻿{
+	"_utc": "2025-03-31T00:00:00",
+	"_t_version": "3.0.00",
+	"_t_table": "ZEN_SCHEMAS",
+	"_isPublished": false,
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "http://127.0.0.1:1080/json_schemes/scheme_sessions.json",
+	"title": "PROTEE V20 - SESSIONS scheme",
+	"description": "Session entity JSON scheme",
+	"type": "object",
+	"properties": {
+		"UID": {
+			"description": "Entity UID",
+			"type": "string",
+			"format": "uuid"
+		},
+		"meta": {
+			"description": "Customer's metadata informations object",
+			"type": "object",
+			"properties": {
+				"createdUser": {
+					"description": "Entity's created user",
+					"type": "string"
+				},
+				"createdDate": {
+					"description": "Entity's created date",
+					"type": "string",
+					"format": "date-time"
+				},
+				"updatedUser": {
+					"description": "Entity's updated user",
+					"type": "string"
+				},
+				"updatedDate": {
+					"description": "Entity's modified date",
+					"type": "string",
+					"format": "date-time"
+				}
+			},
+			"required": [
+				"createdDate",
+				"updatedDate"
+			]
+		}
+	},
+	"required": [
+		"meta"
+	]
+}

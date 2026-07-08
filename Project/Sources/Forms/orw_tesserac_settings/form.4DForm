@@ -1,0 +1,283 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 445,
+					"left": 0,
+					"width": 190,
+					"height": 55,
+					"sizingX": "move",
+					"stroke": "automatic",
+					"class": "Dévé",
+					"text": "Background",
+					"sizingY": "fixed"
+				},
+				"waz_is_bkg": {
+					"type": "subform",
+					"top": 482,
+					"left": 91,
+					"width": 20,
+					"height": 12,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "waz_Switch",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/waz_is_bkg.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"woc_pattern": {
+					"type": "subform",
+					"top": 464,
+					"left": 7,
+					"width": 72,
+					"height": 32,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "woc_pattern",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/woc_pattern.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"text": "enabled",
+					"top": 481,
+					"left": 117,
+					"width": 51,
+					"height": 16,
+					"sizingX": "move"
+				},
+				"waz_is_bkg_ellipse": {
+					"type": "subform",
+					"top": 464,
+					"left": 91,
+					"width": 20,
+					"height": 12,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "waz_Switch",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/waz_is_bkg_ellipse.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"text": "ellipse",
+					"top": 463,
+					"left": 117,
+					"width": 51,
+					"height": 16,
+					"sizingX": "move"
+				},
+				"orw_obj_cube": {
+					"type": "subform",
+					"top": 245,
+					"left": 0,
+					"width": 190,
+					"height": 100,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "orw_obj_settings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/orw_obj_cube.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"orw_obj_polygons": {
+					"type": "subform",
+					"top": 145,
+					"left": 0,
+					"width": 190,
+					"height": 100,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "orw_obj_settings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/orw_obj_polygons.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"orw_obj_lines": {
+					"type": "subform",
+					"top": 345,
+					"left": 0,
+					"width": 190,
+					"height": 100,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "orw_obj_settings",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/orw_obj_lines.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Zone de groupe6": {
+					"type": "groupBox",
+					"top": 40,
+					"left": 98,
+					"width": 90,
+					"height": 104,
+					"sizingX": "move",
+					"stroke": "automatic",
+					"class": "Dévé",
+					"text": "Stroke"
+				},
+				"Zone de groupe5": {
+					"type": "groupBox",
+					"top": 40,
+					"left": 0,
+					"width": 90,
+					"height": 104,
+					"sizingX": "move",
+					"stroke": "automatic",
+					"class": "Dévé",
+					"text": "Angle"
+				},
+				"waz_angle": {
+					"type": "subform",
+					"top": 58,
+					"left": 5,
+					"width": 80,
+					"height": 80,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "waz_rotator",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/waz_angle.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"waz_stroke": {
+					"type": "subform",
+					"top": 58,
+					"left": 103,
+					"width": 80,
+					"height": 80,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "waz_rotator",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/waz_stroke.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"waz_coef": {
+					"type": "subform",
+					"top": 0,
+					"left": 0,
+					"width": 190,
+					"height": 40,
+					"sizingX": "move",
+					"dataSourceTypeHint": "object",
+					"detailForm": "waz_ruler",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"borderStyle": "dotted",
+					"method": "ObjectMethods/waz_coef.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 405,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
