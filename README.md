@@ -1,16 +1,15 @@
-<div align="center">
-
-<!-- Header with left text and right logo -->
-<div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-  <div style="text-align: left;">
-    <strong style="font-size: 1.2em;">The Real and The Fake.</strong><br>
-    <strong style="font-size: 1em;">Mantra:</strong> Question the construct, clarify the meaning.<br>
-    <strong style="font-size: 1em;">Tagline:</strong> Learn, then build.
-  </div>
-  <div>
-    <img src="https://www.protee.org/images/Orwells/Orwells.png" alt="Orwells Logo" width="120" style="border-radius: 12px;">
-  </div>
-</div>
+<table width="100%">
+  <tr>
+    <td align="left">
+      <strong style="font-size:1.2em">The Real and The Fake.</strong><br>
+      <strong>Mantra:</strong> Question the construct, clarify the meaning.<br>
+      <strong>Tagline:</strong> Learn, then build.
+    </td>
+    <td align="right">
+      <img src="https://www.protee.org/images/Orwells/Orwells.png" alt="Orwells Logo" width="120">
+    </td>
+  </tr>
+</table>
 
 <!-- Title and badges -->
 # Orwells – The Real and The Fake
