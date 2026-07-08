@@ -1,11 +1,3 @@
-<img src="https://www.protee.org/images/Orwells/Orwells.png" alt="Orwells Logo" width="120" align="right">
-
-<strong style="font-size:1.2em">The Real and The Fake.</strong><br>
-<strong>Mantra:</strong> Question the construct, clarify the meaning.<br>
-<strong>Tagline:</strong> Learn, then build.
-
-<br clear="both">
-
 <!-- Title and badges -->
 <div align="center">
 
@@ -13,13 +5,20 @@
 
 [![4D HDI](https://img.shields.io/badge/4D-HDI-blue)](#)
 [![4D SRC](https://img.shields.io/badge/4D-SRC-blue)](#)
+[![4D v21](https://img.shields.io/badge/4D-v21%2B-brightgreen)](#)
 [![License: Free](https://img.shields.io/badge/License-Free-brightgreen.svg)](#license)
 [![Platform: macOS & Windows](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey)](#)
-[![4D v21](https://img.shields.io/badge/4D-v21%2B-brightgreen)](#)
 
 </div>
 
 ---
+
+<img src="https://www.protee.org/images/Orwells/Orwells.png" alt="Orwells Logo" width="120" align="right">
+
+<strong style="font-size:1.2em">The Real and The Fake.</strong><br>
+<strong>Mantra:</strong> Question the construct, clarify the meaning.<br>
+<strong>Tagline:</strong> Learn, then build.
+<br clear="both">
 
 ## Overview
 
