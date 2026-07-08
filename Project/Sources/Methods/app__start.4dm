@@ -13,7 +13,7 @@ app_initRegister_ogt()  // Register & initialize ogTools Suite
 app_initialize_waz()  // User waz widgets tuning
 app_initRegister()  // Before zen to have a good .j_prefs
 app_initialize_zen()  // Host zen_Nucleus initialisations
-app_initRegister_DEV()  // DEV components
+app_initRegister_after()  // DEV components
 
 
 zen_dashboard_init_upd(True:C214)  // Be sure there is a proper ZEN_DASHBOARD record

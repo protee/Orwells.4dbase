@@ -25,11 +25,11 @@ Class constructor($is_record : Boolean)
 			: ($vT_action=$vT_prefix) && ($vT_param="xxx")  // home.xxx.sem.
 				$vT_param3:=$vC_at_answer[2]
 				Case of 
-					: ($vT_param3="releases_notes")
-						This:C1470._release_notes()
+					: ($vT_param3="releases")
+						This:C1470._do_releases()
 						
-					: ($vT_param3="agreement")
-						This:C1470._agreement()
+					: ($vT_param3="license")
+						This:C1470._do_license()
 						
 				End case 
 				
@@ -168,27 +168,29 @@ Function _z_about()
 	BEEP:C151
 	
 	
-Function _release_notes()
+Function _do_releases()
 	var $is_edit : Boolean
 	var $vJ_prefs; $vJ_wox_prefs : Object
 	var $vT_version_last : Text
+	var $cE_zen_dashboard : cs:C1710.ZEN_DASHBOARDEntity
 	$vJ_prefs:=app__storage_prefs()
 	$is_edit:=Not:C34(Is compiled mode:C492) && Shift down:C543
-	//ALL RECORDS([Parameters])
-	//$vT_version_last:=<>user_id#0 ? <>ULVersion : [Parameters]LVersion
+	$cE_zen_dashboard:=ds:C1482.ZEN_DASHBOARD.all().first()
+	$vT_version_last:=$cE_zen_dashboard.version_previous
 	$vJ_wox_prefs:=wox__storage_prefs
-	$vJ_wox_prefs.fu_release_notes($vJ_prefs; $is_edit; $vT_version_last)
+	$vJ_wox_prefs.fu_releases($vJ_prefs; $is_edit; $vT_version_last)
 	
-Function _agreement()
+Function _do_license()
 	var $is_edit : Boolean
 	var $vJ_prefs; $vJ_wox_prefs : Object
 	var $vT_version_last : Text
+	var $cE_zen_dashboard : cs:C1710.ZEN_DASHBOARDEntity
 	$vJ_prefs:=app__storage_prefs()
 	$is_edit:=Not:C34(Is compiled mode:C492) && Shift down:C543
-	//ALL RECORDS([Parameters])
-	//$vT_version_last:=<>user_id#0 ? <>ULVersion : [Parameters]LVersion
+	$cE_zen_dashboard:=ds:C1482.ZEN_DASHBOARD.all().first()
+	$vT_version_last:=$cE_zen_dashboard.version_previous
 	$vJ_wox_prefs:=wox__storage_prefs
-	$vJ_wox_prefs.fu_agreement($vJ_prefs; $is_edit; $vT_version_last)
+	$vJ_wox_prefs.fu_license($vJ_prefs; $is_edit; $vT_version_last)
 	
 	
 Function _z_help()
@@ -201,7 +203,7 @@ Function _z_help()
 	//$vJ_params.t_root_path:=h_server_get_resources+"_HELP"+Folder separator
 	$vJ_params.t_sub_path:=""
 	$vJ_params.t_root:="AIDE : "+$vT_title
-	$vJ_params.t_title:=$vT_title+" ogBox - Aide intégrée"
+	$vJ_params.t_title:=$vT_title+" ogBox - integrated help"
 	$vJ_params.t_process:="HELP"
 	$vJ_params.t_pref_name:="help"
 	$vJ_params.is_editing:=False:C215

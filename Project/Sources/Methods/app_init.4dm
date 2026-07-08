@@ -20,7 +20,7 @@ wox_prefs_set_host_name($vT_host)
 
 Use ($vJ_prefs)
 	$vJ_prefs.t_name:=$vT_host
-	$vJ_prefs.t_version:="1.1.10"
+	$vJ_prefs.t_version:="21.0.00"
 	$vJ_prefs.t_app:="orw"
 	$vJ_prefs.l_make:=2  // 0 Database ; 1 Component ; 2 HDI ; 3 Quick
 	$vJ_prefs.fo_rsc:=Folder:C1567(fk resources folder:K87:11)

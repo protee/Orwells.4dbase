@@ -1,0 +1,16 @@
+﻿{
+	"aj_versions": [
+		{
+			"t_version": "21.0.00",
+			"d_date": "2026-07-08",
+			"t_title": "Github and 4D 21",
+			"t_markdown": "<!--RNH_21.0.00-->\n<h5> <span class=\"badge badge-success\">21.0.00</span> <span class=\"badge badge-info\">Wednesday 8 July 2026</span> <span class=\"badge badge-light\">Github and 4D 21</span></h5><!--/RNH_21.0.00-->\n\n### All the HDI on Github\n* protee.orwells.4Dbase\n* Source code\n* SampleData.zip given in releases\n* All ogToolsSuite by dependencies manager\n"
+		},
+		{
+			"t_version": "20.0.00",
+			"d_date": "2025-05-08",
+			"t_markdown": "<!--RNH_20.0.00-->\n<h5> <span class=\"badge badge-success\">20.0.00</span> <span class=\"badge badge-info\">Thursday 8 May 2025</span> <span class=\"badge badge-light\">First release</span></h5><!--/RNH_20.0.00-->\n\n",
+			"t_title": "First release"
+		}
+	]
+}
