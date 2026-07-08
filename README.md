@@ -7,6 +7,8 @@
 <br clear="both">
 
 <!-- Title and badges -->
+<div align="center">
+
 # Orwells – The Real and The Fake
 
 [![4D HDI](https://img.shields.io/badge/4D-HDI-blue)](#)
