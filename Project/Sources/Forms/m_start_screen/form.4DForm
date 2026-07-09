@@ -84,7 +84,7 @@
 					"textAlign": "left",
 					"fontSize": 12,
 					"borderStyle": "none",
-					"stroke": "#FFFFFF",
+					"stroke": "#000000",
 					"fontWeight": "bold",
 					"visibility": "hidden",
 					"contextMenu": "none"
@@ -101,7 +101,8 @@
 					"textAlign": "center",
 					"fontSize": 12,
 					"borderStyle": "none",
-					"stroke": "#FFFFFF"
+					"stroke": "#000000",
+					"fontWeight": "bold"
 				},
 				"btn_product": {
 					"type": "pictureButton",
@@ -204,7 +205,7 @@
 			"Vue 9": {}
 		}
 	},
-	"geometryStamp": 1352,
+	"geometryStamp": 1356,
 	"$4d": {
 		"version": "1",
 		"kind": "form"
