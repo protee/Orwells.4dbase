@@ -168,24 +168,34 @@ Function lb_meta_info($vJ_table : Object)->$vJ_meta : Object
 	var $vL_colors : Integer
 	var $vJ_meta_cell : Object
 	$vJ_meta:=New object:C1471
+	//This.meta_colors($vJ_meta; $vL_colors)
 	$vJ_meta_cell:=New object:C1471
 	$vJ_meta.cell:=$vJ_meta_cell
-	
 	$vL_colors:=$vJ_table.l_colors_module
-	This:C1470.meta_cell_colors($vJ_meta_cell; "lb_module"; $vL_colors)
+	This:C1470.meta_colors($vJ_meta_cell; $vL_colors; "lb_module")
 	$vL_colors:=$vJ_table.l_colors_table
-	This:C1470.meta_cell_colors($vJ_meta_cell; "lb_table"; $vL_colors)
+	This:C1470.meta_colors($vJ_meta_cell; $vL_colors; "lb_table")
 	
 	
-	
-Function meta_cell_colors($vJ_meta_cell : Object; $vT_column : Text; $vL_colors : Integer)
-	var $vJ_meta_cell_values : Object
+Function meta_colors($vJ_meta : Object; $vL_colors : Integer; $vT_column : Text)
+	// no $vT_column -> $vJ_meta | for row
+	// $vT_column -> $vJ_meta = $vJ_meta_cell | for cell
+	// fill "#ff3322"
+	// stroke "#335588"
 	var $vT_color_stroke; $vT_color_fill : Text
-	$vJ_meta_cell_values:=New object:C1471
-	$vJ_meta_cell[$vT_column]:=$vJ_meta_cell_values  // Issue => give the column name that can change
+	var $vJ_meta_values : Object
+	If ($vT_column#"")
+		$vJ_meta_values:=$vJ_meta[$vT_column]  // Issue => give the column name that can change
+		If ($vJ_meta_values=Null:C1517)
+			$vJ_meta_values:=New object:C1471
+			$vJ_meta[$vT_column]:=$vJ_meta_values  // Issue => give the column name that can change
+		End if 
+	Else 
+		$vJ_meta_values:=$vJ_meta
+	End if 
 	woc_sp_colors_to_html($vL_colors; ->$vT_color_stroke; ->$vT_color_fill; True:C214)
-	$vJ_meta_cell_values.stroke:=$vT_color_stroke
-	$vJ_meta_cell_values.fill:=$vT_color_fill
+	$vJ_meta_values.stroke:=$vT_color_stroke
+	$vJ_meta_values.fill:=$vT_color_fill
 	// *
 	// *****
 	
@@ -507,7 +517,7 @@ Function get_aj_fields($vL_table : Integer)->$vC_aj_fields : Collection
 	var $is_index; $is_unique; $is_invisible : Boolean
 	var $vL_nb_fields; $vL_no_field; $vL_field_type; $vL_field_lenght; $idx : Integer
 	var $vJ_field : Object
-	$vL_nb_fields:=Get last field number:C255($vL_table)
+	$vL_nb_fields:=Last field number:C255($vL_table)
 	$vC_aj_fields:=New collection:C1472()
 	$idx:=0
 	For ($vL_no_field; 1; $vL_nb_fields)

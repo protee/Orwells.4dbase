@@ -15,16 +15,12 @@ Function lb_meta_info($c4E_entity : 4D:C1709.Entity)->$vJ_meta : Object
 	var $vL_colors : Integer
 	var $vT_color_stroke; $vT_color_fill : Text
 	$vJ_meta:=New object:C1471
-	//$is_active:=$c4E_entity.isActive
-	//$vL_colors:=woc_sp_colors_from_row($is_active ? k_MDcolorsIdx_lime : k_MDcolorsIdx_grey)
 	$vL_colors:=$c4E_entity.colors
-	//woc_sp_colors_to_html($vL_colors; ->$vT_color_stroke; ->$vT_color_fill; True)
-	//$vJ_meta.stroke:=$vT_color_stroke
-	//$vJ_meta.fill:=$vT_color_fill
+	//This.meta_colors($vJ_meta; $vL_colors)
 	$vJ_meta_cell:=New object:C1471
 	$vJ_meta.cell:=$vJ_meta_cell
 	$vT_column:=This:C1470.get_column("label")
-	This:C1470.meta_cell_colors($vJ_meta_cell; $vT_column; $vL_colors)
+	This:C1470.meta_colors($vJ_meta_cell; $vL_colors; $vT_column)
 	
 	
 Function lb_active_img($cE_speeches : cs:C1710.SPEECHESEntity)->$vO_img : Picture  // Form.fc.lb_active_img(This)

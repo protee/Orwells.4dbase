@@ -25,16 +25,13 @@ Function lb_meta_info($c4E_entity : 4D:C1709.Entity)->$vJ_meta : Object
 	var $vT_color_stroke; $vT_color_fill : Text
 	$vJ_meta:=New object:C1471
 	$vL_colors:=$c4E_entity.colors
-	//woc_sp_colors_to_html($vL_colors; ->$vT_color_stroke; ->$vT_color_fill; True)
-	//$vJ_meta.stroke:=$vT_color_stroke
-	//$vJ_meta.fill:=$vT_color_fill
+	//This.meta_colors($vJ_meta; $vL_colors)
 	$vJ_meta_cell:=New object:C1471
 	$vJ_meta.cell:=$vJ_meta_cell
 	$vT_column:=This:C1470.get_column("yinTongue")
-	This:C1470.meta_cell_colors($vJ_meta_cell; $vT_column; $vL_colors)
-	$vJ_meta.cell:=$vJ_meta_cell
+	This:C1470.meta_colors($vJ_meta_cell; $vL_colors; $vT_column)
 	$vT_column:=This:C1470.get_column("yangTongue")
-	This:C1470.meta_cell_colors($vJ_meta_cell; $vT_column; $vL_colors)
+	This:C1470.meta_colors($vJ_meta_cell; $vL_colors; $vT_column)
 	
 	
 Function lb_active_img($cE_orwells : cs:C1710.ORWELLSEntity)->$vO_img : Picture  // Form.fc.lb_active_img(This)

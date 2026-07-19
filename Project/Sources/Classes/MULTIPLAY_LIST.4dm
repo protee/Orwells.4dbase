@@ -13,7 +13,6 @@ Function lb_initialize($vJ_data : Object; $is_local : Boolean)
 	
 	
 Function lb_meta_info($cE_MULTIPLAY : cs:C1710.MULTIPLAYEntity)->$vJ_meta : Object
-	$vJ_meta:=New object:C1471
 	var $vL_colors; $vL_color_lines; $vL_color_bkg : Integer
 	var $vJ_fields : Object
 	var $vT_color_stroke; $vT_color_fill : Text
@@ -21,17 +20,15 @@ Function lb_meta_info($cE_MULTIPLAY : cs:C1710.MULTIPLAYEntity)->$vJ_meta : Obje
 	$vL_color_lines:=$vJ_fields.l_lines
 	$vL_color_bkg:=$vJ_fields.l_bkg
 	$vL_colors:=woc_sp_colors_from_sf($vL_color_lines; $vL_color_bkg)
-	woc_sp_colors_to_html($vL_colors; ->$vT_color_stroke; ->$vT_color_fill; True:C214)
-	$vJ_meta.stroke:=$vT_color_stroke
-	$vJ_meta.fill:=$vT_color_fill
+	$vJ_meta:=New object:C1471
+	This:C1470.meta_colors($vJ_meta; $vL_colors)
 	
 	// For cells
 	//var $vJ_meta_cell : Object
 	//$vJ_meta_cell:=New object
 	//$vJ_meta.cell:=$vJ_meta_cell
-	
 	//$vL_colors:=($c4E_entity.Pseudo#"") ? k_MDcolorsAppSecondary : k_MDcolorsBW
-	//This.meta_cell_colors($vJ_meta_cell; "Column13"; $vL_colors_assPer)
+	//This.meta_colors($vJ_meta_cell; $vL_colors_assPer; "Column13")
 	
 	
 	
