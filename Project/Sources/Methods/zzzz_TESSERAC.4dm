@@ -1,8 +1,8 @@
-//%attributes = {}
+//%attributes = {"lang":"en"}
 
 var $cE_TESSERAC : cs:C1710.TESSERACEntity
 var $cES_TESSERAC : cs:C1710.TESSERACSelection
-var $vJ_fields; $vJ_polygons; $vJ_cube; $vJ_lines; $vJ_value; $vJ_pattern : Object
+var $vJ_fields; $vJ_polygons; $vJ_cube; $vJ_lines; $vJ_pattern : Object
 var $vC_at_properties : Collection
 var $vT_property : Text
 

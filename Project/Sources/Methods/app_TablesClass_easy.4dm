@@ -3,7 +3,7 @@
 #DECLARE()->$vC_aj_TablesClass : Collection
 var $vC_aj_modulesTables; $vC_tables : Collection
 var $vL_color_table_idx : Integer
-var $vJ_module : Object
+var $vJ_module; $vJ_relate : Object
 
 
 // ***** Easy create

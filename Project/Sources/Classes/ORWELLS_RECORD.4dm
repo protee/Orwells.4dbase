@@ -128,6 +128,7 @@ Function _btn_yang()
 	
 	
 Function translate($vT_source : Text; $vT_ISO2_source : Text; $vT_ISO2_target : Text)->$vT_answer : Text
+	var $vT_sourceISO2; $vT_targetISO2 : Text
 	If ($vT_ISO2_source#"") && ($vT_ISO2_target#"") && ($vT_ISO2_source#$vT_ISO2_target)
 		If ($vT_sourceISO2=$vT_targetISO2)
 			$vT_answer:=$vT_source

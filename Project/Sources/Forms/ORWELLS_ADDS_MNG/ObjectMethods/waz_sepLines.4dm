@@ -1,6 +1,6 @@
 
 var $vL_evt : Integer
-var $vJ_widget; $vJ_menu : Object
+var $vJ_widget : Object
 
 $vL_evt:=Form event code:C388
 Case of 

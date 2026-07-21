@@ -1,4 +1,5 @@
 
+var $vJ_widget : Object
 C_LONGINT:C283($vL_evt)
 $vL_evt:=Form event code:C388
 Case of 
@@ -19,5 +20,4 @@ Case of
 		
 		
 End case 
-
 

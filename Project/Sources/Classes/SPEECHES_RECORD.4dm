@@ -126,6 +126,16 @@ Function _do_adds()
 	
 Function _do_add_orwells()
 	var $c4Fu_orwells : 4D:C1709.Function
+	var $c4DC_fragments : 4D:C1709.DataClass
+	var $c4ES_selection; $c4ES_selected : 4D:C1709.EntitySelection
+	var $isOk : Boolean
+	var $cE_fragments : cs:C1710.FRAGMENTSEntity
+	var $cES_fragments : cs:C1710.FRAGMENTSSelection
+	var $cE_orwells : cs:C1710.ORWELLSEntity
+	var $cES_orwells : cs:C1710.ORWELLSSelection
+	var $vL_order; $vL_colors : Integer
+	var $vJ_fragments; $vJ_params : Object
+	var $vT_UID : Text
 	
 	$vJ_fragments:=OBJECT Get value:C1743("zen_fragments")
 	$vJ_params:=New object:C1471()
@@ -226,7 +236,7 @@ Function _get_separator_char($is_lines : Boolean; $is_stringify : Boolean)->$vT_
 Function _fragments_to_pasteboard($cES_fragments : cs:C1710.FRAGMENTSSelection; $vL_yinYang_msk : Integer; $vT_label : Text; $vT_separator : Text)
 	var $vC_answer : Collection
 	var $cE_fragments : cs:C1710.FRAGMENTSEntity
-	var $vT_line; $vT_title; $vT_answer : Text
+	var $vT_line; $vT_title; $vT_answer; $vT_sepLines1 : Text
 	var $vT_yinYang; $vT_answer_plain; $vT_answer_rtf; $vT_sepLine; $vT_sepLines; $vT_text : Text
 	var $vX_blob : Blob
 	var $cE_orwells : cs:C1710.ORWELLSEntity
@@ -354,6 +364,7 @@ Function _do_language()
 	var $cE_SPEECHES : cs:C1710.SPEECHESEntity
 	var $tt : Integer
 	var $vT_title; $vT_yinISO2; $vT_yangISO2; $vT_refMenu; $vT_prefix; $vT_ISO2; $vT_answerMenu; $vT_field : Text
+	var $cE_ORWELLS : cs:C1710.ORWELLSEntity
 	$cES_fragments:=This:C1470._lb_fragments_c4ES(True:C214)
 	$tt:=$cES_fragments.length
 	$vT_title:="Set language of "+wox_str_pluralise($tt; "line")
@@ -388,6 +399,8 @@ Function _do_language()
 	
 	
 Function FRAGMENTS_upd()
+	var $vJ_zen_fragments : Object
+	var $vT_zen_fragments : Text
 	$vT_zen_fragments:="zen_fragments"
 	$vJ_zen_fragments:=OBJECT Get value:C1743($vT_zen_fragments)
 	$vJ_zen_fragments.refresh()
@@ -395,12 +408,13 @@ Function FRAGMENTS_upd()
 	
 Function _do_translate()
 	var $is_idle; $isOk : Boolean
-	var $vC_at_keys; $vC_answer : Collection
+	var $vC_at_keys; $vC_at_answer : Collection
 	var $cE_fragments : cs:C1710.FRAGMENTSEntity
 	var $cES_fragments : cs:C1710.FRAGMENTSSelection
-	var $cE_SPEECHES : cs:C1710.SPEECHESEntity
-	var $tt : Integer
-	var $vT_title; $vT_yinISO2; $vT_yangISO2; $vT_refMenu; $vT_prefix; $vT_ISO2; $vT_answerMenu; $vT_field : Text
+	var $tt; $k : Integer
+	var $vT_title; $vT_refMenu; $vT_prefix; $vT_answerMenu : Text
+	var $vT_path_menu; $vT_icon; $vT_label; $vT_source; $vT_target; $vT_sourceISO2_field; $vT_targetISO2_field; $vT_source_field; $vT_target_field; $vT_sourceISO2; $vT_targetISO2; $vT_answer : Text
+	var $cE_ORWELLS : cs:C1710.ORWELLSEntity
 	$cES_fragments:=This:C1470._lb_fragments_c4ES(True:C214)
 	$tt:=$cES_fragments.length
 	$vT_title:="Translate "+wox_str_pluralise($tt; "line")

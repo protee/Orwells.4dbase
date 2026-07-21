@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"en"}
 // Project Method: wox__storage_prefs
 //
 // Parameter Type Description
@@ -12,6 +12,7 @@
 // 09/04/2023   OG   Initial version.
 
 #DECLARE->$vJ_stuff : Object
+var $vJ_preset : Object
 $vJ_stuff:=Storage:C1525.j_stuff
 
 Use ($vJ_stuff)
@@ -24,6 +25,4 @@ Use ($vJ_stuff)
 	$vJ_stuff.j_io_orange:=OB Copy:C1225($vJ_preset; ck shared:K85:29; $vJ_stuff)
 	
 End use 
-
-
 

@@ -36,7 +36,7 @@ Use ($vJ_prefs)
 	
 	// ***** Handlers
 	// *
-	var $vJ_handlers : Object
+	var $vJ_handlers; $vJ_relate_many_dup : Object
 	$vJ_handlers:=New shared object:C1526
 	$vJ_prefs.j_handlers:=$vJ_handlers
 	

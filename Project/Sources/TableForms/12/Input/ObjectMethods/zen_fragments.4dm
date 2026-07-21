@@ -1,6 +1,6 @@
 
 var $vJ_widget : Object
-var $vL_evt : Integer
+var $vL_evt; $vL_event : Integer
 $vL_evt:=Form event code:C388
 Case of 
 	: ($vL_evt=On Load:K2:1)

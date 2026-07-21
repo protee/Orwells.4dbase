@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"lang":"en"}
 
 // ***** DEFAULT
 // *
@@ -14,7 +14,7 @@ SET DATABASE PARAMETER:C642(Tips duration:K37:81; 12*60)  // in tick (12s) (edit
 // ***** COMPONENTS FOR PROD
 // *
 var $isOk : Boolean
-var $vJ_prefs_wob; $vJ_screen; $vJ_screen_j_windows; $vJ_prefs_waz : Object
+var $vJ_prefs_wob; $vJ_screen; $vJ_screen_j_windows; $vJ_prefs_waz; $vJ_wok_prefs : Object
 var $vJ_prefs; $vJ_wox_prefs : Object
 var $c4Fo_prefs_zen : 4D:C1709.Folder
 wok_init()

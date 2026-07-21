@@ -1,7 +1,7 @@
 //%attributes = {"lang":"en"}
 
 #DECLARE($vL_svg_width : Integer; $vL_svg_height : Integer; $vJ_data : Object)->$vO_pict : Picture
-var $vL_scale; $vL_cube_colors; $vL_lines_colors; $vL_stroke_line; $x1; $y1; $x2; $y2 : Integer
+var $vL_scale; $vL_cube_colors; $vL_lines_colors; $x1; $y1; $x2; $y2 : Integer
 var $vL_polygons_stroke; $vL_polygons_opacity; $vL_cube_stroke; $vL_cube_opacity; $vL_lines_stroke; $vL_lines_opacity; $vL_pattern; $vL_colors; $vL_rxy; $vL_stroke_bkg : Integer
 var $vL_xp1_last; $vL_yp1_last; $vL_xp2_last; $vL_yp2_last; $vL_xp1; $vL_yp1; $vL_xp2; $vL_yp2 : Integer
 var $vL_stroke; $vL_count; $vL_radius_x1; $vL_radius_y1; $vL_radius; $vL_cx1; $vL_cy1 : Integer

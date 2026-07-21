@@ -5,6 +5,7 @@ Class constructor($vT_LB : Text)
 	Super:C1705($vT_LB)  // Init LB
 	
 Function lb_initialize($vJ_data : Object; $is_local : Boolean)
+	var $vT_LB : Text
 	Super:C1706.lb_initialize($vJ_data; $is_local)
 	$vT_LB:=This:C1470.t_LB
 	If ($vT_LB#"")
@@ -13,7 +14,8 @@ Function lb_initialize($vJ_data : Object; $is_local : Boolean)
 	
 Function lb_meta_info($c4E_entity : 4D:C1709.Entity)->$vJ_meta : Object
 	var $vL_colors : Integer
-	var $vT_color_stroke; $vT_color_fill : Text
+	var $vT_column : Text
+	var $vJ_meta_cell : Object
 	$vJ_meta:=New object:C1471
 	//$is_active:=$c4E_entity.isActive
 	//$vL_colors:=woc_sp_colors_from_row($is_active ? k_MDcolorsIdx_lime : k_MDcolorsIdx_grey)

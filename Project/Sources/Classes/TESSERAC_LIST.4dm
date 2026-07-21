@@ -5,6 +5,7 @@ Class constructor($vT_LB : Text)
 	Super:C1705($vT_LB)  // Init LB
 	
 Function lb_initialize($vJ_data : Object; $is_local : Boolean)
+	var $vT_LB : Text
 	Super:C1706.lb_initialize($vJ_data; $is_local)
 	$vT_LB:=This:C1470.t_LB
 	If ($vT_LB#"")  // To be able being used in preemptive (4DV generation process server)

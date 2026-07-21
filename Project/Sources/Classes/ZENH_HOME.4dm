@@ -76,6 +76,7 @@ Function _menu_tables($vT_prefix : Text; $vC_aj_tables : Collection; $is_local :
 	var $vJ_tableClass : Object
 	var $vT_path_icons; $vT_table; $vT_icon : Text
 	var $vL_table : Integer
+	var $c4Fi_icon : 4D:C1709.File
 	$is_toAttach:=($vT_refMenu#"")
 	
 	$vT_refMenu_answer:=Create menu:C408

@@ -228,7 +228,7 @@ Function _do_delete()
 Function _do_it()->$isOk : Boolean
 	var $vC_at_yinTongue; $vC_at_yangTongue; $vC_lb_selected : Collection
 	var $tt : Integer
-	var $vT_UIDcategory : Text
+	var $vT_UIDcategory; $vT_popup : Text
 	
 	$vC_lb_selected:=This:C1470._get_lb_selected()
 	$tt:=$vC_lb_selected.length

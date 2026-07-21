@@ -5,6 +5,7 @@ Class constructor($vT_LB : Text)
 	Super:C1705($vT_LB)  // Init LB
 	
 Function lb_initialize($vJ_data : Object; $is_local : Boolean)
+	var $vT_LB : Text
 	Super:C1706.lb_initialize($vJ_data; $is_local)
 	$vT_LB:=This:C1470.t_LB
 	If ($vT_LB#"")  // To be able being used in preemptive (4DV generation process server)
@@ -15,7 +16,6 @@ Function lb_initialize($vJ_data : Object; $is_local : Boolean)
 Function lb_meta_info($cE_MULTIPLAY : cs:C1710.MULTIPLAYEntity)->$vJ_meta : Object
 	var $vL_colors; $vL_color_lines; $vL_color_bkg : Integer
 	var $vJ_fields : Object
-	var $vT_color_stroke; $vT_color_fill : Text
 	$vJ_fields:=$cE_MULTIPLAY.fields
 	$vL_color_lines:=$vJ_fields.l_lines
 	$vL_color_bkg:=$vJ_fields.l_bkg
@@ -33,7 +33,7 @@ Function lb_meta_info($cE_MULTIPLAY : cs:C1710.MULTIPLAYEntity)->$vJ_meta : Obje
 	
 	
 Function multiplay_draw($cE_MULTIPLAY : cs:C1710.MULTIPLAYEntity)->$vO_img : Picture
-	var $vL_width; $vL_height; $vL_scale : Integer
+	var $vL_width; $vL_height : Integer
 	var $vJ_fields : Object
 	$vL_width:=64
 	$vL_height:=64

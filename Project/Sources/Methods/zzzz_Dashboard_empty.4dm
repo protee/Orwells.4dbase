@@ -1,8 +1,9 @@
-//%attributes = {}
+//%attributes = {"lang":"en"}
 
 var $c4DC_ZEN_DASHBOARD : cs:C1710.ZEN_DASHBOARD
 var $cES_ZEN_DASHBOARD : cs:C1710.ZEN_DASHBOARDSelection
 var $cE_ZEN_DASHBOARD : cs:C1710.ZEN_DASHBOARDEntity
+var $c4DC_ZEN_DASHBOARD : 4D:C1709.DataClass
 $c4DC_ZEN_DASHBOARD:=zen__ds["ZEN_DASHBOARD"]
 $cES_ZEN_DASHBOARD:=$c4DC_ZEN_DASHBOARD.all()
 //$cES_ZEN_DASHBOARD.drop()

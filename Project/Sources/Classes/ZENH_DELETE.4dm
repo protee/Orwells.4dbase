@@ -37,6 +37,7 @@ Function record_delete($vT_table : Text; $c4E_entity : 4D:C1709.Entity; $is_canc
 	// ***** All tables specific dispatcher
 	// *
 Function _aj_delete_fill($vT_table : Text; $c4ES_selection : 4D:C1709.EntitySelection)->$vC_aj_delete : Collection
+	var $c4ES_related; $c4ES_related1; $c4ES_related2 : 4D:C1709.EntitySelection
 	$vC_aj_delete:=This:C1470._get_aj_delete()
 	This:C1470._main_table($vC_aj_delete; $c4ES_selection)
 	

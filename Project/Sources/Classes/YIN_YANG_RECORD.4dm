@@ -9,7 +9,6 @@ Class constructor
 	//Super.form_modify($vC_at_objects_nc)
 	
 Function record_load_upd()
-	var $vJ_fields : Object
 	Super:C1706.record_load_upd()
 	This:C1470.l_timer:=1
 	This:C1470.redraw()
@@ -112,7 +111,7 @@ Function _copy_PP($vT_objectName : Text)
 	
 	
 Function redraw()
-	var $vJ_prefs : Object
+	var $vJ_fields : Object
 	var $vP_svg; $vP_svg1 : Pointer
 	$vJ_fields:=Form:C1466.c4E.fields
 	$vP_svg:=OBJECT Get pointer:C1124(Object named:K67:5; "oO_svg")

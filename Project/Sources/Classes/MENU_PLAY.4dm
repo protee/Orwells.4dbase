@@ -4,11 +4,11 @@ Class constructor
 	
 	
 Function _menu_sessions($vT_refMenu : Text)->$vT_refMenu_answer : Text  //  #GUESSED: $vT_refMenu_local
-	var $is_toAttach; $is_stroke : Boolean
+	var $is_toAttach : Boolean
 	var $cE_SESSIONS : cs:C1710.SESSIONSEntity
 	var $cES_SESSIONS : cs:C1710.SESSIONSSelection
 	var $vT_refMenu_sub; $vT_path_icons : Text
-	var $vL_colors; $vL_stroke; $vL_fill; $vL_color : Integer
+	var $vL_color : Integer
 	$is_toAttach:=($vT_refMenu#"")
 	
 	$vT_path_icons:="path:/RESOURCES/tables/icn_"
@@ -72,11 +72,11 @@ Function _menu_speeches($cE_SESSIONS : cs:C1710.SESSIONSEntity; $vT_refMenu : Te
 Function _menu_fragments($cE_SPEECHES : cs:C1710.SPEECHESEntity; $vT_refMenu : Text)->$vT_refMenu_answer : Text
 	var $cE_FRAGMENTS : cs:C1710.FRAGMENTSEntity
 	var $cE_ORWELLS : cs:C1710.ORWELLSEntity
-	var $is_toAttach; $is_stroke : Boolean
+	var $is_toAttach : Boolean
 	var $cES_FRAGMENTS : cs:C1710.FRAGMENTSSelection
 	var $vT_label; $vT_path_icons_01; $vT_path_icons; $vT_yinTongue; $vT_yangTongue; $vT_sep : Text
 	var $vC_label : Collection
-	var $vL_playOrder; $vL_colors; $vL_stroke; $vL_fill; $vL_color : Integer
+	var $vL_playOrder; $vL_colors; $vL_color : Integer
 	$is_toAttach:=($vT_refMenu#"")
 	
 	$cES_FRAGMENTS:=$cE_SPEECHES.SPEECHES_FRAGMENTS

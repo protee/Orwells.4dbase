@@ -1,5 +1,8 @@
-//%attributes = {}
+//%attributes = {"lang":"en"}
 
+var $vL_form; $vL_refwin : Integer
+var $vJ_form : Object
+var $vT_form : Text
 READ ONLY:C145(*)
 
 $vT_form:="OG_IMPORTER"

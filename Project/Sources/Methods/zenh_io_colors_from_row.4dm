@@ -1,7 +1,7 @@
-//%attributes = {"preemptive":"incapable"}
+//%attributes = {"preemptive":"incapable","lang":"en"}
 
 #DECLARE($vJ_widget_in : Object; $vL_color_row : Integer; $is_icon_tr : Boolean)->$vJ_widget : Object
-var $vL_colors; $vL_shape_colors : Integer
+var $vL_colors; $vL_shape_colors; $vL_icon_color : Integer
 
 $vJ_widget:=$vJ_widget_in || New object:C1471()
 

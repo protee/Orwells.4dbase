@@ -9,6 +9,8 @@ Class constructor
 	//Super.form_modify($vC_at_objects_nc)
 	
 Function record_load_upd()
+	var $is_new : Boolean
+	var $cE_ORWELLS : cs:C1710.ORWELLSEntity
 	Super:C1706.record_load_upd()
 	$is_new:=Form:C1466.is_new
 	If ($is_new)
@@ -30,6 +32,7 @@ Function record_checkout()->$isOk : Boolean
 	$isOk:=True:C214
 	
 Function record_touched($c4E_record : 4D:C1709.Entity)->$is_touched : Boolean
+	var $cE_ORWELLS : cs:C1710.ORWELLSEntity
 	$cE_ORWELLS:=Form:C1466.c4E_ORWELLS
 	$is_touched:=$cE_ORWELLS ? $cE_ORWELLS.touched() : False:C215
 	If (Not:C34($is_touched))
@@ -42,6 +45,8 @@ Function do_touched()
 	
 	
 Function record_save($c4E_entity : 4D:C1709.Entity)
+	var $is_touched : Boolean
+	var $cE_ORWELLS : cs:C1710.ORWELLSEntity
 	$cE_ORWELLS:=Form:C1466.c4E_ORWELLS
 	$is_touched:=$cE_ORWELLS ? $cE_ORWELLS.touched() : False:C215
 	If ($is_touched)
@@ -99,7 +104,10 @@ Function form_events()
 	// *
 	// *****
 	
-Function ORWELLS_bind($cE_ORWELLS)
+Function ORWELLS_bind($cE_ORWELLS : cs:C1710.ORWELLSEntity)
+	var $vC_at_keys : Collection
+	var $vJ_widget : Object
+	var $vT_key : Text
 	$vC_at_keys:=New collection:C1472()
 	$vC_at_keys.push("yin"; "yang")
 	For each ($vT_key; $vC_at_keys)
@@ -111,6 +119,9 @@ Function ORWELLS_bind($cE_ORWELLS)
 	
 	
 Function ORWELLS_update()
+	var $vC_at_keys : Collection
+	var $vJ_widget : Object
+	var $vT_key : Text
 	$vC_at_keys:=New collection:C1472()
 	$vC_at_keys.push("yin"; "yang")
 	For each ($vT_key; $vC_at_keys)
@@ -159,6 +170,7 @@ Function _btn_yang()
 	
 	
 Function translate($vT_source : Text; $vT_ISO2_source : Text; $vT_ISO2_target : Text)->$vT_answer : Text
+	var $vT_sourceISO2; $vT_targetISO2 : Text
 	If ($vT_ISO2_source#"") && ($vT_ISO2_target#"") && ($vT_ISO2_source#$vT_ISO2_target)
 		If ($vT_sourceISO2=$vT_targetISO2)
 			$vT_answer:=$vT_source

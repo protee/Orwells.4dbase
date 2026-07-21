@@ -257,7 +257,7 @@ Function stop_timer()
 	
 Function timer()
 	var $vL_count; $vL_factor; $vL_pgcd : Integer
-	var $vJ_fields : Object
+	var $vJ_fields; $vJ_widget : Object
 	var $vP_svg; $vP_pgcd; $vP_btn; $vP_svg1 : Pointer
 	var $vR_factor : Real
 	$vP_svg:=OBJECT Get pointer:C1124(Object named:K67:5; "oO_svg")

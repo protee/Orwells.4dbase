@@ -1,8 +1,8 @@
 
 Class constructor($vL_winRef : Integer; $vL_width_add : Integer)
 	var $vL_left; $vL_top; $vL_right; $vL_bottom : Integer
-	var $vL_width_start; $vL_height_start; $vL_width; $vL_height; $vL_height_add : Integer
-	var $vJ_animate; $vJ_this; $vJ_form_prefs : Object
+	var $vL_width_start; $vL_height_start; $vL_width; $vL_height; $vL_height_add; $vL_duration : Integer
+	var $vJ_animate; $vJ_this; $vJ_form_prefs; $vJ_settings : Object
 	var $vT_worker : Text
 	var $is_width_add : Boolean
 	

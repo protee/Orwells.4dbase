@@ -1,6 +1,6 @@
 //%attributes = {"lang":"en"}
 
-var $vJ_widgets; $vJ_widget; $vJ_value; $vJ_pattern : Object
+var $vJ_widgets; $vJ_widget; $vJ_value; $vJ_pattern; $vJ_obj : Object
 $vJ_widgets:=New shared object:C1526
 Use (Storage:C1525)
 	Storage:C1525.j_widgets:=$vJ_widgets

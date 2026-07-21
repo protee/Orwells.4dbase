@@ -1,5 +1,7 @@
 //%attributes = {"lang":"en"}
 
+var $vC_primeNumber : Collection
+var $vJ_stuff; $vJ_colors_square; $vJ_color_square; $vJ_colors_text : Object
 $vJ_stuff:=Storage:C1525.j_stuff
 $vJ_stuff:=New shared object:C1526
 Use (Storage:C1525)

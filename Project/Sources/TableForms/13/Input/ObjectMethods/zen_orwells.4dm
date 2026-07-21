@@ -5,6 +5,7 @@ $vL_evt:=Form event code:C388
 Case of 
 	: ($vL_evt=On Load:K2:1)
 		var $vJ_widget : Object
+		var $c4Fu_orwells : 4D:C1709.Function
 		$vJ_widget:=Self:C308->
 		$vJ_widget.c4E_set("ORWELLS"; "UIDorwell")
 		//$vJ_widget.t_table:="ORWELLS"
@@ -22,5 +23,4 @@ Case of
 		//Form.fc.isModeIcn()
 		
 End case 
-
 
