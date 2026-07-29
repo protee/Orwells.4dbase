@@ -88,6 +88,7 @@ Function _modules($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 	
 Function palette_get($is_record : Boolean)->$vJ_palette : Object
 	var $vJ_pattern : Object
+	var $vL_curve : Integer
 	$vJ_palette:=New object:C1471
 	$vJ_palette.is_icn:=True:C214  // Mode icons
 	$vJ_palette.l_btn_wh:=30
@@ -96,7 +97,7 @@ Function palette_get($is_record : Boolean)->$vJ_palette : Object
 	
 	//$vJ_palette.t_font_face:="Arial"
 	$vJ_palette.l_font_color:=k_MD_white
-	$vJ_palette.l_font_size:=14
+	$vJ_palette.l_font_size:=10
 	$vJ_palette.l_font_style:=Bold:K14:2
 	$vJ_palette.l_centered:=0
 	
@@ -153,7 +154,7 @@ Function palette_build($vJ_palette : Object)
 		//This._menu_xxx($vC_aj_palette; $vt_path_tables; "zenPop"; "zen4DPop")
 		$vJ_prefs:=app__storage_prefs()
 		$vT_base_name:=$vJ_prefs.t_name+"© "+$vJ_prefs.t_version
-		$vC_aj_palette.push(This:C1470._menu_item($vT_base_name; "product"; $vt_path_product))
+		$vC_aj_palette.push(This:C1470._menu_item($vT_base_name; "product"; $vt_path_product; 1.8))
 		//$vC_aj_palette.push(This._menu_item("zenPop"; "zen4DPop"; $vt_path_tables))
 		$vC_aj_palette.push(This:C1470._menu_item("Relations"; "relations"; $vT_path_icons))
 		$vC_aj_palette.push(This:C1470._menu_item("About"; "about"; $vT_path_icons))
@@ -167,13 +168,16 @@ Function palette_build($vJ_palette : Object)
 	// *
 	// *****
 	
-Function _menu_item($vT_label : Text; $vT_menu : Text; $vt_path_icn : Text)->$vJ_palette : Object
+Function _menu_item($vT_label : Text; $vT_menu : Text; $vt_path_icn : Text; $vR_font_coef : Real)->$vJ_palette : Object
 	var $vJ_this : Object
 	$vJ_this:=This:C1470
 	$vJ_palette:=New object:C1471()
 	$vJ_palette.t_label:=$vT_label
 	$vJ_palette.t_menu:=$vT_menu
 	$vJ_palette.t_icn_path:=$vt_path_icn+$vT_menu
+	If ($vR_font_coef#0)
+		$vJ_palette.r_font_size:=$vR_font_coef
+	End if 
 	$vJ_palette.fu_method:=Formula:C1597($vJ_this._actions($1; $2))
 	
 	
@@ -213,8 +217,8 @@ Function _menu_modules($vC_aj_palette : Collection; $vt_path_icn : Text)
 			$vL_colors:=woc_sp_colors_from_sf($vL_color; 0)
 		End if 
 		$vJ_extra_btn.l_colors:=$vL_colors  // -> add circle and line
-		$vJ_extra_btn.r_font_size:=1.5
-		$vJ_extra_btn.l_font_style:=Bold:K14:2+Italic:K14:3
+		$vJ_extra_btn.r_font_size:=1.7
+		$vJ_extra_btn.l_font_style:=Italic:K14:3
 		$vJ_extra_btn.t_menu:=$vT_label
 		$vJ_extra_btn.fu_method:=Formula:C1597($vJ_this._modules($1; $2))
 		$vL_table_colors:=This:C1470._is_table_color ? $vL_colors : 0

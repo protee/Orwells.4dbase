@@ -66,7 +66,7 @@ Function form_events()
 					This:C1470.redraw()
 					
 				: ($vT_objectName="btn_square")
-					This:C1470.square()
+					This:C1470.do_square()
 					
 			End case 
 			
@@ -119,7 +119,7 @@ Function redraw()
 	$vP_svg1->:=orw_circles_svg_object($vP_svg1; $vJ_fields)
 	
 	
-Function square()
+Function do_square()
 	var $vL_left; $vL_top; $vL_right; $vL_bottom; $vL_width; $vL_height; $vL_wh : Integer
 	var $vP_svg : Pointer
 	$vP_svg:=OBJECT Get pointer:C1124(Object named:K67:5; "oO_svg")
