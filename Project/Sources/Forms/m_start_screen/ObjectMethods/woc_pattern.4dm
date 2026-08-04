@@ -10,7 +10,7 @@ Case of
 		$vJ_widget.j_value:=$vJ_value
 		$vJ_value.l_pattern:=14
 		//$vJ_value.l_colors:=0x3597  // [md:53] – [md:151]
-		$vJ_value.l_colors:=0xAA02101E  // [swo:33] – [swo:30]//0xAA03E03B  // [swo:62] – [swo:59]  
+		$vJ_value.l_colors:=0xAA047045  // [swo:71] – [swo:69]
 		$vJ_value.l_rxy:=10
 		$vJ_value.l_stroke:=0
 		$vJ_value.l_opacity:=100
