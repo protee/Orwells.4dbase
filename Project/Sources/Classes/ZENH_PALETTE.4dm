@@ -93,16 +93,16 @@ Function io_palette_get()->$vJ_io_palette : Object
 	var $vJ_pattern : Object
 	var $vL_curve : Integer
 	$vJ_io_palette:=New object:C1471
-	$vJ_io_palette.r_scale:=1.3  //1.8
+	$vJ_io_palette.r_scale:=1.5
 	$vJ_io_palette.l_padding:=10
-	$vJ_io_palette.r_angle_start:=-Pi:K30:1  ///3*2
-	$vJ_io_palette.r_angle_end:=Pi:K30:1/4*3
-	$vJ_io_palette.r_angle_start:=Pi:K30:1  ///3*2
+	//$vJ_io_palette.r_angle_start:=-Pi  
+	//$vJ_io_palette.r_angle_end:=Pi/4*3
+	$vJ_io_palette.r_angle_start:=-Pi:K30:1
 	$vJ_io_palette.r_angle_end:=0
 	
-	//$vJ_io_palette.t_font_face:="Arial"
+	$vJ_io_palette.t_font_face:="Calibri"
 	$vJ_io_palette.l_font_color:=0x0097
-	$vJ_io_palette.l_font_size:=11
+	$vJ_io_palette.l_font_size:=12
 	$vJ_io_palette.r_font_wh_ratio:=0.55
 	$vJ_io_palette.l_font_style:=0  //Bold
 	$vJ_io_palette.l_centered:=0
