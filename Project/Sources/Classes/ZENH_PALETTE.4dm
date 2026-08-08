@@ -93,7 +93,7 @@ Function io_palette_get()->$vJ_io_palette : Object
 	var $vJ_pattern : Object
 	var $vL_curve : Integer
 	$vJ_io_palette:=New object:C1471
-	$vJ_io_palette.r_scale:=1.5
+	$vJ_io_palette.r_scale:=1.4
 	$vJ_io_palette.l_padding:=10
 	//$vJ_io_palette.r_angle_start:=-Pi  
 	//$vJ_io_palette.r_angle_end:=Pi/4*3
@@ -102,15 +102,15 @@ Function io_palette_get()->$vJ_io_palette : Object
 	
 	$vJ_io_palette.t_font_face:="Calibri"
 	$vJ_io_palette.l_font_color:=0x0097
-	$vJ_io_palette.l_font_size:=12
+	$vJ_io_palette.l_font_size:=16
 	$vJ_io_palette.r_font_wh_ratio:=0.55
 	$vJ_io_palette.l_font_style:=0  //Bold
 	$vJ_io_palette.l_centered:=0
 	$vJ_io_palette.r_dot_coef:=0.25
 	
-	$vJ_io_palette.r_increment:=0.06
+	$vJ_io_palette.r_increment:=0.08
 	$vJ_io_palette.l_timer:=1
-	$vL_curve:=wox_math_curve_idFromName("expoIn")
+	$vL_curve:=wox_math_curve_idFromName("Expo")
 	$vJ_io_palette.l_curve:=$vL_curve
 	$vJ_io_palette.is_close:=True:C214
 	
