@@ -14,6 +14,7 @@ Function palette_do($is_record : Boolean)->$isOk : Boolean
 	var $vV_answer : Variant
 	If (Windows Ctrl down:C562) || (Macintosh control down:C544) || (Macintosh command down:C546) || (Right click:C712)
 		$cs_ZENH_INFOS:=cs:C1710.ZENH_INFOS.new($is_record)
+		$isOk:=$cs_ZENH_INFOS.do_menu($is_record)
 	Else 
 		$vJ_palette_menu:=This:C1470.palette_menu_get($is_record)
 		wox_sounds_play("Glitch4")
@@ -34,6 +35,7 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 	Case of 
 		: ($vT_item="product")
 			$cs_ZENH_INFOS:=cs:C1710.ZENH_INFOS.new()
+			$isOk:=$cs_ZENH_INFOS.do_menu($is_record)
 			
 		: ($vT_item="relations")
 			app_relations_form()
@@ -47,10 +49,10 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 			//: ($vT_item="zen4DPop")
 			//zen_4DPop()
 			
-		: ($vT_item="ogTools")
+		: ($vT_item="ogToolsSuite")
 			var $vT_prefix; $vT_refMenu; $vT_answerMenu; $vT_action; $vT_param; $vT_param3 : Text
 			var $vC_at_answer : Collection
-			$vT_prefix:="ogToolsSuite"
+			$vT_prefix:=$vT_item  //"ogToolsSuite"
 			$vT_refMenu:=wox_4dPop_menu($vT_prefix)
 			$vT_answerMenu:=Dynamic pop up menu:C1006($vT_refMenu)
 			RELEASE MENU:C978($vT_refMenu)
@@ -60,20 +62,19 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 				$vT_action:=$vC_at_answer.shift()
 				$vT_param:=$vC_at_answer[0]
 				Case of 
-					: ($vT_action=$vT_prefix) && ($vT_param="xxx")  // home.xxx.sem.
-						$vT_param3:=$vC_at_answer[2]
-						Case of 
-							: ($vT_param3="releases")
-								This:C1470._do_releases()
-								
-							: ($vT_param3="license")
-								This:C1470._do_license()
-						End case 
+					: ($vT_action=$vT_prefix)  //"ogToolsSuite")
+						wox_4Dpop_execute($vC_at_answer)
 						
-					: ($vT_action="ogToolsSuite")
-						This:C1470._ogDevTools($vC_at_answer)
-						//: ($vT_action="4DPop")
-						//This._ogDevTools($vC_at_answer)
+						//: ($vT_action=$vT_prefix) && ($vT_param="xxx")  // home.xxx.sem.
+						//$vT_param3:=$vC_at_answer[2]
+						//Case of 
+						//: ($vT_param3="releases")
+						//This._do_releases()
+						
+						//: ($vT_param3="license")
+						//This._do_license()
+						//End case 
+						
 				End case 
 			End if 
 	End case 
@@ -166,7 +167,7 @@ Function palette_menu_get($is_record : Boolean)->$vJ_palette_menu : Object
 		$vC_aj_items.push(This:C1470._menu_item("Relations"; "relations"; $vT_path_icons))
 		$vC_aj_items.push(This:C1470._menu_item("About"; "about"; $vT_path_icons))
 		$vC_aj_items.push(This:C1470._menu_item("Documentation"; "doc"; $vT_path_icons))
-		
+		$vC_aj_items.push(This:C1470._menu_item("ogToolsSuite ©"; "ogToolsSuite"; $vT_path_icons))
 	End if 
 	
 	// ***** Modules & Tables
