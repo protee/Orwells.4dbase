@@ -16,8 +16,12 @@ Function palette_do($is_record : Boolean)->$isOk : Boolean
 		$cs_ZENH_INFOS:=cs:C1710.ZENH_INFOS.new($is_record)
 	Else 
 		$vJ_palette_menu:=This:C1470.palette_menu_get($is_record)
+		wox_sounds_play("Glitch4")
 		$vV_answer:=waz_io_palette($vJ_palette_menu)
 		$isOk:=$vV_answer#Null:C1517
+		If (Not:C34($isOk))
+			wox_sounds_play("Drop")
+		End if 
 	End if 
 	
 	
@@ -93,7 +97,7 @@ Function io_palette_get()->$vJ_io_palette : Object
 	var $vJ_pattern : Object
 	var $vL_curve : Integer
 	$vJ_io_palette:=New object:C1471
-	$vJ_io_palette.r_scale:=1.4
+	$vJ_io_palette.r_scale:=1.3
 	$vJ_io_palette.l_padding:=10
 	//$vJ_io_palette.r_angle_start:=-Pi  
 	//$vJ_io_palette.r_angle_end:=Pi/4*3
@@ -108,7 +112,7 @@ Function io_palette_get()->$vJ_io_palette : Object
 	$vJ_io_palette.l_centered:=0
 	$vJ_io_palette.r_dot_coef:=0.25
 	
-	$vJ_io_palette.r_increment:=0.08
+	$vJ_io_palette.r_increment:=Shift down:C543 ? 0.02 : 0.08
 	$vJ_io_palette.l_timer:=1
 	$vL_curve:=wox_math_curve_idFromName("Expo")
 	$vJ_io_palette.l_curve:=$vL_curve

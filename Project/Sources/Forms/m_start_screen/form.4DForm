@@ -150,8 +150,8 @@
 				},
 				"waz_zen": {
 					"type": "subform",
-					"top": 180,
-					"left": 458,
+					"top": 160,
+					"left": 228,
 					"width": 30,
 					"height": 30,
 					"dataSourceTypeHint": "object",
@@ -205,7 +205,7 @@
 			"Vue 9": {}
 		}
 	},
-	"geometryStamp": 1356,
+	"geometryStamp": 1360,
 	"$4d": {
 		"version": "1",
 		"kind": "form"
