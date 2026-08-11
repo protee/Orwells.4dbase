@@ -178,7 +178,7 @@ Function translate($vT_source : Text; $vT_ISO2_source : Text; $vT_ISO2_target : 
 			$vT_answer:=wox_ISO2_translate($vT_source; $vT_ISO2_source; $vT_ISO2_target; True:C214)
 		End if 
 	Else 
-		wox_sounds_play_glop_no()
+		cs:C1710.wox.TUNES.me.play_glop_no()
 	End if 
 	
 	

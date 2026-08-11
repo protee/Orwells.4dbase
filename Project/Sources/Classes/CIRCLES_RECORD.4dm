@@ -106,7 +106,7 @@ Function _copy_PP($vT_objectName : Text)
 	$vO_picture:=$vP_svg->
 	CONVERT PICTURE:C1002($vO_picture; ".png")
 	SET PICTURE TO PASTEBOARD:C521($vO_picture)
-	wox_sounds_play_glop()
+	cs:C1710.wox.TUNES.me.play_glop()
 	
 	
 Function redraw()

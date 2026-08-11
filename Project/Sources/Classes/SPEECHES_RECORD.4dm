@@ -188,7 +188,7 @@ Function _do_copy()
 	
 Function _do_excel()
 	//$vL_err:=u_excel_exportLB("Export "+Table name($vP_table); $vP_LB; True)
-	wox_sounds_play_glop_no()
+	cs:C1710.wox.TUNES.me.play_glop_no()
 	
 	
 Function _do_colors($vL_colors : Integer)
@@ -209,10 +209,10 @@ Function _do_colors($vL_colors : Integer)
 			$vJ_zen_fragments:=OBJECT Get value:C1743($vT_zen_fragments)
 			$vJ_zen_fragments.redraw()
 		End if 
-		wox_sounds_play_glop()
+		cs:C1710.wox.TUNES.me.play_glop()
 		
 	Else 
-		wox_sounds_play_glop_no()
+		cs:C1710.wox.TUNES.me.play_glop_no()
 	End if 
 	// *
 	// *****
@@ -470,7 +470,7 @@ Function translate($vT_source : Text; $vT_sourceISO2 : Text; $vT_targetISO2 : Te
 			$vT_answer:=wox_ISO2_translate($vT_source; $vT_sourceISO2; $vT_targetISO2; True:C214)
 		End if 
 	Else 
-		wox_sounds_play_glop_no()
+		cs:C1710.wox.TUNES.me.play_glop_no()
 	End if 
 	
 	

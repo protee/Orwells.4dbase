@@ -83,7 +83,7 @@ Function extras_mng($vT_table : Text; $vT_menu : Text; $c4ES_selection_in : 4D:C
 			waz_io_alert_popup("Not implemented!"; "alert")
 			
 		Else 
-			wox_sounds_play_glop_no()
+			cs:C1710.wox.TUNES.me.play_glop_no()
 			$c4ES_selection:=$c4ES_selection_in
 	End case 
 	// *

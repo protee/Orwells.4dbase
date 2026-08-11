@@ -132,8 +132,8 @@ Function _btn_logo()
 	//End if 
 	
 	//Else 
-	//wox_sounds_play_edit()
-	////wox_sounds_play__key().edit()
+	//cs.wox.TUNES.me.play_edit()
+	////cs.wox.TUNES.me.play__key().edit()
 	//End if 
 	
 	
