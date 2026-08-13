@@ -11,15 +11,14 @@ Class constructor
 Function palette_do($is_record : Boolean)->$isOk : Boolean
 	var $cs_ZENH_INFOS : cs:C1710.ZENH_INFOS
 	var $vJ_palette_menu : Object
-	var $vV_answer : Variant
+	var $vT_answer : Text
 	If (Windows Ctrl down:C562) || (Macintosh control down:C544) || (Macintosh command down:C546) || (Right click:C712)
 		$cs_ZENH_INFOS:=cs:C1710.ZENH_INFOS.new($is_record)
 		$isOk:=$cs_ZENH_INFOS.do_menu($is_record)
 	Else 
 		$vJ_palette_menu:=This:C1470.palette_menu_get($is_record)
 		cs:C1710.wox.TUNES.me.play_main_menuIn()
-		$vT_answer:=waz_io_palette($vJ_palette_menu)
-		$isOk:=$vT_answer#""
+		$isOk:=waz_io_palette($vJ_palette_menu; ->$vT_answer)
 		If (Not:C34($isOk))
 			cs:C1710.wox.TUNES.me.play_main_menuOut()
 		End if 
@@ -50,8 +49,9 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 			//zen_4DPop()
 			
 		: ($vT_item="ogToolsSuite")
-			var $vT_prefix; $vT_refMenu; $vT_answerMenu; $vT_action; $vT_param; $vT_param3 : Text
+			var $vT_prefix; $vT_refMenu; $vT_answerMenu; $vT_action; $vT_param : Text
 			var $vC_at_answer : Collection
+			var $is_record : Boolean
 			$vT_prefix:=$vT_item  //"ogToolsSuite"
 			$vT_refMenu:=wox_4dPop_menu($vT_prefix)
 			$vT_answerMenu:=Dynamic pop up menu:C1006($vT_refMenu)
