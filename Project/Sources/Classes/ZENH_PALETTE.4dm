@@ -17,10 +17,10 @@ Function palette_do($is_record : Boolean)->$isOk : Boolean
 		$isOk:=$cs_ZENH_INFOS.do_menu($is_record)
 	Else 
 		$vJ_palette_menu:=This:C1470.palette_menu_get($is_record)
-		cs:C1710.wox.TUNES.me.play_main_menuIn()
+		cs:C1710.wox.SOUNDS.me.play_main_menuIn()
 		$isOk:=waz_io_palette($vJ_palette_menu; ->$vT_answer)
 		If (Not:C34($isOk))
-			cs:C1710.wox.TUNES.me.play_main_menuOut()
+			cs:C1710.wox.SOUNDS.me.play_main_menuOut()
 		End if 
 	End if 
 	
@@ -53,7 +53,7 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 			var $vC_at_answer : Collection
 			var $is_record : Boolean
 			$vT_prefix:=$vT_item  //"ogToolsSuite"
-			$vT_refMenu:=wox_4dPop_menu($vT_prefix)
+			$vT_refMenu:=wox_4dPop_apps_menu($vT_prefix; ".xxx")
 			$vT_answerMenu:=Dynamic pop up menu:C1006($vT_refMenu)
 			RELEASE MENU:C978($vT_refMenu)
 			$isOk:=(""#$vT_answerMenu)
@@ -89,7 +89,7 @@ Function _tables($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 	
 Function _modules($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 	$isOk:=True:C214
-	cs:C1710.wox.TUNES.me.play_confirm()
+	cs:C1710.wox.SOUNDS.me.play_confirm()
 	// *
 	// *****
 	

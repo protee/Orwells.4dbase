@@ -119,7 +119,7 @@ Function _speech_display()
 	If ($cE_speeches#Null:C1517)
 		$cs_SPEECH_DSPLY:=cs:C1710.SPEECH_DSPLY.new($cE_speeches)
 	Else 
-		cs:C1710.wox.TUNES.me.play_beep()
+		cs:C1710.wox.SOUNDS.me.play_beep()
 	End if 
 	
 Function _speech_play()
@@ -129,7 +129,7 @@ Function _speech_play()
 	If ($cE_speeches#Null:C1517)
 		$cs_SPEECH_PLAY:=cs:C1710.SPEECH_PLAY.new($cE_speeches)
 	Else 
-		cs:C1710.wox.TUNES.me.play_beep()
+		cs:C1710.wox.SOUNDS.me.play_beep()
 	End if 
 	
 	
