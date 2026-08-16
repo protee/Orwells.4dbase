@@ -8,7 +8,7 @@ var $vR_stroke_scaled; $vR_stroke_circle; $vR_stroke_line : Real
 var $vT_svg_root; $vT_color_bkg; $vT_object; $vT_stroke_dots; $vT_fill_dots; $vT_color_line; $vT_text : Text
 
 
-$vL_scale:=app__storage_prefs.l_scale
+$vL_scale:=orw__storage_prefs.l_scale
 $vL_svg_width:=$vL_svg_width*$vL_scale
 $vL_svg_height:=$vL_svg_height*$vL_scale
 

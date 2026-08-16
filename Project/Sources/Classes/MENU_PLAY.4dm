@@ -50,7 +50,7 @@ Function _menu_speeches($cE_SESSIONS : cs:C1710.SESSIONSEntity; $vT_refMenu : Te
 	DISABLE MENU ITEM:C150($vT_refMenu_answer; -1)
 	//APPEND MENU ITEM($vT_refMenu_answer; "-")
 	
-	$vJ_menu:=app__storage_menuBtns().m_yinYangPlay
+	$vJ_menu:=orw__storage_menuBtns().m_yinYangPlay
 	$vT_path_icons:="path:/RESOURCES/"+$vJ_menu.t_path+"icn_"+$vJ_menu.t_key
 	
 	$cES_SPEECHES:=$cE_SESSIONS.SESSIONS_SPEECHES.orderBy("label")

@@ -81,8 +81,8 @@ Function _records_delete($vC_aj_delete : Collection; $vT_table : Text; $is_entit
 	
 	$is_transaction:=Not:C34(Active transaction:C1387)
 	
-	$vJ_j_io_red:=OB Copy:C1225(app__storage_stuff.j_io_red)
-	$vJ_j_io_orange:=OB Copy:C1225(app__storage_stuff.j_io_orange)
+	$vJ_j_io_red:=OB Copy:C1225(orw__storage_stuff.j_io_red)
+	$vJ_j_io_orange:=OB Copy:C1225(orw__storage_stuff.j_io_orange)
 	
 	$vL_delete_count:=$vC_aj_delete.length
 	$is_deletable:=False:C215
@@ -169,13 +169,13 @@ Function _records_delete($vC_aj_delete : Collection; $vT_table : Text; $is_entit
 						//$is_toDelete:=$vJ_table.is_delete
 						//If ($is_oneEntity && ($idx=0))
 						//// Remove only record, not selection...
-						//Else 
+						//Else
 						$c4ES_notDeleted:=$c4ES_toDelete.drop(dk stop dropping on first error:K85:26)
 						$isOk:=($c4ES_notDeleted.length=0)
 						If (Not:C34($isOk))
 							break
 						End if 
-						//End if 
+						//End if
 						$idx+=1
 					End for each 
 					waz_progress_quit($vT_progress_uid)

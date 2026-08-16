@@ -24,7 +24,7 @@ var $vR_angle; $vR_pi6; $vR_pi3; $vR_angle_step; $vR_angle2; $vR_angle3; $vR_rad
 var $vC_al_diameters : Collection
 
 
-$vL_scale:=app__storage_prefs.l_scale
+$vL_scale:=orw__storage_prefs.l_scale
 $vL_svg_width*=$vL_scale
 $vL_svg_height*=$vL_scale
 
@@ -146,7 +146,7 @@ $vL_diameter_dot8:=$vL_diameter_dot4*2
 //$vL_reverse1:=Num(Not($is_reverse))
 //If ($is_reverse)
 //$vL_radius_x:=-$vL_radius_x
-//End if 
+//End if
 //$vL_radius_x_D2:=$vL_radius_x/2
 
 $vR_angle:=$vL_angle*Degree:K30:2

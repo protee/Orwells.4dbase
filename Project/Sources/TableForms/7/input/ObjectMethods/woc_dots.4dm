@@ -5,7 +5,7 @@ $vL_evt:=Form event code:C388
 Case of 
 	: ($vL_evt=On Load:K2:1)
 		$vJ_widget:=Self:C308->
-		wox_vJ_overload(app__storage_stuff.j_colors_square; $vJ_widget)
+		wox_vJ_overload(orw__storage_stuff.j_colors_square; $vJ_widget)
 		$vJ_widget.is_editing:=Form:C1466.is_editing
 		$vJ_widget.j_value:=Form:C1466.c4E.fields
 		$vJ_widget.t_property:="l_dots"

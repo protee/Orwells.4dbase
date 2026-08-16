@@ -1,7 +1,7 @@
 //%attributes = {"lang":"en"}
 
 If (wok__registered("wom").first()#Null:C1517)
-	EXECUTE METHOD:C1007("wom_configurate_vJ"; *; app__storage_prefs)
+	EXECUTE METHOD:C1007("wom_configurate_vJ"; *; orw__storage_prefs)
 End if 
 
 // If (Startup in a new process) -> DO IT MANUALLY

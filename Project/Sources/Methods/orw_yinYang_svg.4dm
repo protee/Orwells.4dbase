@@ -17,7 +17,7 @@ var $vJ_bkg; $vJ_yin; $vJ_yang : Object
 var $vR_coef; $vR_coef_dot; $vR_coef_angle : Real
 
 
-$vL_scale:=app__storage_prefs.l_scale
+$vL_scale:=orw__storage_prefs.l_scale
 $vL_svg_width*=$vL_scale
 $vL_svg_height*=$vL_scale
 

@@ -179,7 +179,7 @@ Function _clean_text($vT_text : Text; $vT_sepLine : Text; $vT_sepLines : Text)->
 Function _yinYang_msk($vL_yinYang : Integer)->$vL_yinYang_msk : Integer
 	var $vC_yinYang_msk : Collection
 	var $vJ_menu : Object
-	$vJ_menu:=app__storage_menuBtns().m_yinYangPlay
+	$vJ_menu:=orw__storage_menuBtns().m_yinYangPlay
 	$vC_yinYang_msk:=$vJ_menu.al_yinYang_msk
 	$vL_yinYang_msk:=$vC_yinYang_msk[$vL_yinYang]
 	

@@ -6,7 +6,7 @@ $vL_evt:=Form event code:C388
 Case of 
 	: ($vL_evt=On Load:K2:1)
 		$vJ_widget:=Self:C308->
-		$vJ_widget.j_menu:=app__storage_menuBtns().m_yinYang
+		$vJ_widget.j_menu:=orw__storage_menuBtns().m_yinYang
 		//Form.l_yinYang:=2
 		$vJ_widget.bind_to("l_yinYang")
 		

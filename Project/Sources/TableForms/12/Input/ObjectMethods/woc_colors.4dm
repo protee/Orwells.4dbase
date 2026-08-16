@@ -8,7 +8,7 @@ Case of
 	: ($vL_event=On Load:K2:1)
 		$vJ_widget:=Self:C308->
 		$vJ_widget.l_border:=Border Sunken:K42:31
-		wox_vJ_overload(app__storage_stuff.$vJ_colors_square; $vJ_widget)
+		wox_vJ_overload(orw__storage_stuff.$vJ_colors_square; $vJ_widget)
 		$vJ_widget.is_editing:=Form:C1466.is_editing
 		$vJ_widget.resize()
 		$vJ_widget.redraw()

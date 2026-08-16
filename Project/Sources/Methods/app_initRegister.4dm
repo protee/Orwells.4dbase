@@ -8,7 +8,7 @@ End if
 
 
 var $vJ_prefs : Object
-$vJ_prefs:=app__storage_prefs
+$vJ_prefs:=orw__storage_prefs
 
 // ***** FIRST INITIALIZE
 // *

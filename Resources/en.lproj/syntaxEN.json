@@ -1,0 +1,3318 @@
+{
+	"_method_": {},
+	"cs.orw": {
+		"ZEN__RECORD": {
+			"new()": {
+				"Syntax": "**.new**( *is_transaction* : Boolean )",
+				"Params": [
+					[
+						"is_transaction",
+						"Boolean",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"SPEECH_PLAY": {
+			"new()": {
+				"Syntax": "**.new**( *c4E_speeches* : 4D.Entity )",
+				"Params": [
+					[
+						"c4E_speeches",
+						"4D.Entity",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"MENU_PLAY": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ZEN__TABLES_SEARCH": {
+			"new()": {
+				"Syntax": "**.new**( *vT_table* : Text; *vL_table* : Integer; *is_local* : Boolean; *vL_winRef* : Integer )",
+				"Params": [
+					[
+						"vT_table",
+						"Text",
+						"->"
+					],
+					[
+						"vL_table",
+						"Integer",
+						"->"
+					],
+					[
+						"is_local",
+						"Boolean",
+						"->"
+					],
+					[
+						"vL_winRef",
+						"Integer",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"SESSIONS_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"orw_circles_settings": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"CATEGORIES_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"SESSIONS_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"orw_ying_yang_settings": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ORWELLS_ADDS_MNG": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"orw_tesserac_settings": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"YIN_YANG_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZENH_DELETE": {
+			"new()": {
+				"Syntax": "**.new**( *is_msg* : Boolean )",
+				"Params": [
+					[
+						"is_msg",
+						"Boolean",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ACTIONS_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"START_SCREEN": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ORWELLS_FILTERS": {
+			"new()": {
+				"Syntax": "**.new**( *vT_table* : Text; *vL_table* : Integer; *is_local* : Boolean )",
+				"Params": [
+					[
+						"vT_table",
+						"Text",
+						"->"
+					],
+					[
+						"vL_table",
+						"Integer",
+						"->"
+					],
+					[
+						"is_local",
+						"Boolean",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ORWELLS_EXTRAS": {
+			"new()": {
+				"Syntax": "**.new**( *vL_winRef* : Integer )",
+				"Params": [
+					[
+						"vL_winRef",
+						"Integer",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZENH_TABLES_FILTERS": {
+			"new()": {
+				"Syntax": "**.new**( *vT_table* : Text; *vL_table* : Integer; *is_local* : Boolean; *vL_winRef* : Integer )",
+				"Params": [
+					[
+						"vT_table",
+						"Text",
+						"->"
+					],
+					[
+						"vL_table",
+						"Integer",
+						"->"
+					],
+					[
+						"is_local",
+						"Boolean",
+						"->"
+					],
+					[
+						"vL_winRef",
+						"Integer",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZENH_HOME": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"TESSERAC_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"SPEECHES_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ORWELLS_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"SPEECH_DSPLY": {
+			"new()": {
+				"Syntax": "**.new**( *c4E_speeches* : 4D.Entity )",
+				"Params": [
+					[
+						"c4E_speeches",
+						"4D.Entity",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZEN__WIDGETS": {
+			"new()": {
+				"Syntax": "**.new**( *vT_widget* : Text )",
+				"Params": [
+					[
+						"vT_widget",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"orw_obj_settings": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"CIRCLES_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"MULTIPLAY_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ACTIONS_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"CIRCLES_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"SPEECHES_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"CATEGORIES_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZEN__FORM_MOVE": {
+			"new()": {
+				"Syntax": "**.new**( *vL_winRef* : Integer; *vL_width_add* : Integer )",
+				"Params": [
+					[
+						"vL_winRef",
+						"Integer",
+						"->"
+					],
+					[
+						"vL_width_add",
+						"Integer",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"TESSERAC_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZENH_EXTRAS": {
+			"new()": {
+				"Syntax": "**.new**( *vL_winRef* : Integer )",
+				"Params": [
+					[
+						"vL_winRef",
+						"Integer",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ORWELLS_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"MULTIPLAY_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZEN__DELETE": {
+			"new()": {
+				"Syntax": "**.new**( *is_msg* : Boolean )",
+				"Params": [
+					[
+						"is_msg",
+						"Boolean",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FRAGMENTS_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ZENH_PALETTE": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ZENH_INFOS": {
+			"new()": {
+				"Syntax": "**.new**( *is_record* : Boolean )",
+				"Params": [
+					[
+						"is_record",
+						"Boolean",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"FRAGMENTS_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"OG_IMPORTER": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"YIN_YANG_RECORD": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ZEN__TABLES_LIST": {
+			"new()": {
+				"Syntax": "**.new**( *vT_LB* : Text )",
+				"Params": [
+					[
+						"vT_LB",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"ZEN__RECORD": {
+		"get_autoSave()": {
+			"Syntax": "**.get_autoSave**( *vL_autosave* : Integer )->is_autoSave : Boolean",
+			"Params": [
+				[
+					"vL_autosave",
+					"Integer",
+					"->"
+				],
+				[
+					"is_autoSave",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_okForChange()": {
+			"Syntax": "**.record_okForChange**( *vJ_form* : Object; *vL_autosave* : Integer )->isCancel : Boolean",
+			"Params": [
+				[
+					"vJ_form",
+					"Object",
+					"->"
+				],
+				[
+					"vL_autosave",
+					"Integer",
+					"->"
+				],
+				[
+					"isCancel",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_save()": {
+			"Syntax": "**.record_save**( *c4E_entity* : 4D.Entity )",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"zen_record_upd()": {
+			"Syntax": "**.zen_record_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_accept()": {
+			"Syntax": "**.record_accept**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_unload()": {
+			"Syntax": "**.record_unload**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"zen_record_events()": {
+			"Syntax": "**.zen_record_events**( *vT_action* : Text )",
+			"Params": [
+				[
+					"vT_action",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"form_modify()": {
+			"Syntax": "**.form_modify**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_cancel()": {
+			"Syntax": "**.record_cancel**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"SPEECH_PLAY": {
+		"form_events()": {
+			"Syntax": "**.form_events**( *vL_event_code* : Integer )",
+			"Params": [
+				[
+					"vL_event_code",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"MENU_PLAY": {},
+	"ZEN__TABLES_SEARCH": {
+		"is_search()": {
+			"Syntax": "**.is_search**( *vC_aj_search_in* : Collection )->is_search : Boolean",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"is_search",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"clear_search()": {
+			"Syntax": "**.clear_search**( *vC_aj_search_in* : Collection )->vC_aj_search : Collection",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"vC_aj_search",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get_widgets()": {
+			"Syntax": "**.get_widgets**( *vC_aj_search_in* : Collection )->vC_aj_search : Collection",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"vC_aj_search",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"set_widgets()": {
+			"Syntax": "**.set_widgets**( *vC_aj_search_in* : Collection )->vC_aj_search : Collection",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"vC_aj_search",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"search_form()": {
+			"Syntax": "**.search_form**( *vT_form* : Text )->isOk : Boolean",
+			"Params": [
+				[
+					"vT_form",
+					"Text",
+					"->"
+				],
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__WIDGETS"
+	},
+	"SESSIONS_LIST": {
+		"lb_colors_img()": {
+			"Syntax": "**.lb_colors_img**( *cE_sessions* : cs.orw.SESSIONSEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_sessions",
+					"cs.orw.SESSIONSEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_active_img()": {
+			"Syntax": "**.lb_active_img**( *cE_sessions* : cs.orw.SESSIONSEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_sessions",
+					"cs.orw.SESSIONSEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *c4E_entity* : 4D.Entity )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"orw_circles_settings": {
+		"l_value": {
+			"Syntax": "l_value : Integer"
+		},
+		"is_touched": {
+			"Syntax": "is_touched : Boolean"
+		},
+		"_inheritedFrom_": "ZEN__WIDGETS"
+	},
+	"CATEGORIES_RECORD": {
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"SESSIONS_RECORD": {
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"orw_ying_yang_settings": {
+		"_inheritedFrom_": "ZEN__WIDGETS"
+	},
+	"ORWELLS_ADDS_MNG": {
+		"form_events()": {
+			"Syntax": "**.form_events**( *vL_event_code* : Integer )",
+			"Params": [
+				[
+					"vL_event_code",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"orw_tesserac_settings": {
+		"l_value": {
+			"Syntax": "l_value : Integer"
+		},
+		"is_touched": {
+			"Syntax": "is_touched : Boolean"
+		},
+		"_inheritedFrom_": "ZEN__WIDGETS"
+	},
+	"YIN_YANG_LIST": {
+		"yinYang_draw()": {
+			"Syntax": "**.yinYang_draw**( *cE_YING_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YING_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_yang_colors_img()": {
+			"Syntax": "**.lb_yang_colors_img**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_bkg_color_img()": {
+			"Syntax": "**.lb_bkg_color_img**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_yin_colors_img()": {
+			"Syntax": "**.lb_yin_colors_img**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vJ_meta : Object",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"ZENH_DELETE": {
+		"record_delete()": {
+			"Syntax": "**.record_delete**( *vT_table* : Text; *c4E_entity* : 4D.Entity; *is_cancel* : Boolean )->isOk : Boolean",
+			"Params": [
+				[
+					"vT_table",
+					"Text",
+					"->"
+				],
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_cancel",
+					"Boolean",
+					"->"
+				],
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"records_delete()": {
+			"Syntax": "**.records_delete**( *vT_table* : Text; *c4ES_selection* : 4D.EntitySelection )->isOk : Boolean",
+			"Params": [
+				[
+					"vT_table",
+					"Text",
+					"->"
+				],
+				[
+					"c4ES_selection",
+					"4D.EntitySelection",
+					"->"
+				],
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__DELETE"
+	},
+	"ACTIONS_LIST": {
+		"lb_active_img()": {
+			"Syntax": "**.lb_active_img**( *cE_speeches* : cs.orw.SPEECHESEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_speeches",
+					"cs.orw.SPEECHESEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *c4E_entity* : 4D.Entity )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"START_SCREEN": {
+		"btn_menu()": {
+			"Syntax": "**.btn_menu**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"btn_play()": {
+			"Syntax": "**.btn_play**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"btn_zen()": {
+			"Syntax": "**.btn_zen**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**( *vL_event_code* : Integer )",
+			"Params": [
+				[
+					"vL_event_code",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"ORWELLS_FILTERS": {
+		"init_search()": {
+			"Syntax": "**.init_search**()->vC_aj_filters : Collection",
+			"Params": [
+				[
+					"vC_aj_filters",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"DO_filters()": {
+			"Syntax": "**.DO_filters**( *c4ES_selection_in* : 4D.EntitySelection )->c4ES_selection : 4D.EntitySelection",
+			"Params": [
+				[
+					"c4ES_selection_in",
+					"4D.EntitySelection",
+					"->"
+				],
+				[
+					"c4ES_selection",
+					"4D.EntitySelection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZENH_TABLES_FILTERS"
+	},
+	"ORWELLS_EXTRAS": {
+		"extras_mng()": {
+			"Syntax": "**.extras_mng**( *vT_table* : Text; *vT_menu* : Text; *c4ES_selection_in* : 4D.EntitySelection; *c4ES_selected* : 4D.EntitySelection; *is_local* : Boolean )->c4ES_selection : 4D.EntitySelection",
+			"Params": [
+				[
+					"vT_table",
+					"Text",
+					"->"
+				],
+				[
+					"vT_menu",
+					"Text",
+					"->"
+				],
+				[
+					"c4ES_selection_in",
+					"4D.EntitySelection",
+					"->"
+				],
+				[
+					"c4ES_selected",
+					"4D.EntitySelection",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				],
+				[
+					"c4ES_selection",
+					"4D.EntitySelection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get_aj_extra_btns()": {
+			"Syntax": "**.get_aj_extra_btns**( *vC_aj_extra_btns* : Collection )",
+			"Params": [
+				[
+					"vC_aj_extra_btns",
+					"Collection",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZENH_EXTRAS"
+	},
+	"ZENH_TABLES_FILTERS": {
+		"is_search()": {
+			"Syntax": "**.is_search**( *vC_aj_search_in* : Collection )->is_search : Boolean",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"is_search",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"set_widgets()": {
+			"Syntax": "**.set_widgets**( *vC_aj_search_in* : Collection )->vC_aj_search : Collection",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"vC_aj_search",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get_widgets()": {
+			"Syntax": "**.get_widgets**( *vC_aj_search_in* : Collection )->vC_aj_search : Collection",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"vC_aj_search",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"clear_search()": {
+			"Syntax": "**.clear_search**( *vC_aj_search_in* : Collection )->vC_aj_search : Collection",
+			"Params": [
+				[
+					"vC_aj_search_in",
+					"Collection",
+					"->"
+				],
+				[
+					"vC_aj_search",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"search_form()": {
+			"Syntax": "**.search_form**( *vT_form* : Text )->isOk : Boolean",
+			"Params": [
+				[
+					"vT_form",
+					"Text",
+					"->"
+				],
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__WIDGETS"
+	},
+	"ZENH_HOME": {
+		"do()": {
+			"Syntax": "**.do**()",
+			"Params": [],
+			"Summary": ""
+		}
+	},
+	"TESSERAC_RECORD": {
+		"start_timer()": {
+			"Syntax": "**.start_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"square()": {
+			"Syntax": "**.square**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"stop_timer()": {
+			"Syntax": "**.stop_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"redraw()": {
+			"Syntax": "**.redraw**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"SPEECHES_RECORD": {
+		"FRAGMENTS_upd()": {
+			"Syntax": "**.FRAGMENTS_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"translate()": {
+			"Syntax": "**.translate**( *vT_source* : Text; *vT_sourceISO2* : Text; *vT_targetISO2* : Text )->vT_answer : Text",
+			"Params": [
+				[
+					"vT_source",
+					"Text",
+					"->"
+				],
+				[
+					"vT_sourceISO2",
+					"Text",
+					"->"
+				],
+				[
+					"vT_targetISO2",
+					"Text",
+					"->"
+				],
+				[
+					"vT_answer",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"ORWELLS_RECORD": {
+		"translate()": {
+			"Syntax": "**.translate**( *vT_source* : Text; *vT_ISO2_source* : Text; *vT_ISO2_target* : Text )->vT_answer : Text",
+			"Params": [
+				[
+					"vT_source",
+					"Text",
+					"->"
+				],
+				[
+					"vT_ISO2_source",
+					"Text",
+					"->"
+				],
+				[
+					"vT_ISO2_target",
+					"Text",
+					"->"
+				],
+				[
+					"vT_answer",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"SPEECH_DSPLY": {
+		"form_events()": {
+			"Syntax": "**.form_events**( *vL_event_code* : Integer )",
+			"Params": [
+				[
+					"vL_event_code",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"ZEN__WIDGETS": {
+		"bind_to()": {
+			"Syntax": "**.bind_to**( *vT_property* : Text; *vJ_value* : Object )",
+			"Params": [
+				[
+					"vT_property",
+					"Text",
+					"->"
+				],
+				[
+					"vJ_value",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"bind_to_c4E()": {
+			"Syntax": "**.bind_to_c4E**( *vT_property* : Text; *vV_default* : Variant )",
+			"Params": [
+				[
+					"vT_property",
+					"Text",
+					"->"
+				],
+				[
+					"vV_default",
+					"Variant",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"resize()": {
+			"Syntax": "**.resize**( *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"unload()": {
+			"Syntax": "**.unload**( *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"set_widget_name()": {
+			"Syntax": "**.set_widget_name**( *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"get_object_wh()": {
+			"Syntax": "**.get_object_wh**( *vT_object* : Text; *vP_width* : Pointer; *vP_height* : Pointer; *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_object",
+					"Text",
+					"->"
+				],
+				[
+					"vP_width",
+					"Pointer",
+					"->"
+				],
+				[
+					"vP_height",
+					"Pointer",
+					"->"
+				],
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"bind_to_c4E_vJ()": {
+			"Syntax": "**.bind_to_c4E_vJ**( *vT_field* : Text; *vJ_default* : Object )",
+			"Params": [
+				[
+					"vT_field",
+					"Text",
+					"->"
+				],
+				[
+					"vJ_default",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"update()": {
+			"Syntax": "**.update**( *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"redraw()": {
+			"Syntax": "**.redraw**( *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"get_canvas_wh()": {
+			"Syntax": "**.get_canvas_wh**( *vP_width* : Pointer; *vP_height* : Pointer; *vT_widget* : Text )",
+			"Params": [
+				[
+					"vP_width",
+					"Pointer",
+					"->"
+				],
+				[
+					"vP_height",
+					"Pointer",
+					"->"
+				],
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"load()": {
+			"Syntax": "**.load**( *vT_widget* : Text )",
+			"Params": [
+				[
+					"vT_widget",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"orw_obj_settings": {
+		"l_value": {
+			"Syntax": "l_value : Integer"
+		},
+		"is_touched": {
+			"Syntax": "is_touched : Boolean"
+		},
+		"_inheritedFrom_": "ZEN__WIDGETS"
+	},
+	"CIRCLES_LIST": {
+		"circles_draw()": {
+			"Syntax": "**.circles_draw**( *cE_CIRCLES* : cs.orw.CIRCLESEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_CIRCLES",
+					"cs.orw.CIRCLESEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_yang_colors_img()": {
+			"Syntax": "**.lb_yang_colors_img**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_bkg_color_img()": {
+			"Syntax": "**.lb_bkg_color_img**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_yin_colors_img()": {
+			"Syntax": "**.lb_yin_colors_img**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *cE_YIN_YANG* : cs.orw.YIN_YANGEntity )->vJ_meta : Object",
+			"Params": [
+				[
+					"cE_YIN_YANG",
+					"cs.orw.YIN_YANGEntity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"MULTIPLAY_RECORD": {
+		"timer()": {
+			"Syntax": "**.timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"start_timer()": {
+			"Syntax": "**.start_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"oO_types_click()": {
+			"Syntax": "**.oO_types_click**( *vT_objectName* : Text )",
+			"Params": [
+				[
+					"vT_objectName",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"oO_types_redraw()": {
+			"Syntax": "**.oO_types_redraw**( *vT_objectName* : Text )",
+			"Params": [
+				[
+					"vT_objectName",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"redraw()": {
+			"Syntax": "**.redraw**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"oO_types_load()": {
+			"Syntax": "**.oO_types_load**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"widgets_upd()": {
+			"Syntax": "**.widgets_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"btn_factor()": {
+			"Syntax": "**.btn_factor**( *vL_value* : Integer )",
+			"Params": [
+				[
+					"vL_value",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"stop_timer()": {
+			"Syntax": "**.stop_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"bt_play()": {
+			"Syntax": "**.bt_play**( *vL_value* : Integer )",
+			"Params": [
+				[
+					"vL_value",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"btn_count()": {
+			"Syntax": "**.btn_count**( *vL_value* : Integer )",
+			"Params": [
+				[
+					"vL_value",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"ACTIONS_RECORD": {
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"CIRCLES_RECORD": {
+		"stop_timer()": {
+			"Syntax": "**.stop_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"redraw()": {
+			"Syntax": "**.redraw**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"do_square()": {
+			"Syntax": "**.do_square**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"start_timer()": {
+			"Syntax": "**.start_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_save()": {
+			"Syntax": "**.record_save**( *c4E_entity* : 4D.Entity )",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"SPEECHES_LIST": {
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *c4E_entity* : 4D.Entity )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"CATEGORIES_LIST": {
+		"lb_colors_img()": {
+			"Syntax": "**.lb_colors_img**( *cE_categories* : cs.orw.CATEGORIESEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_categories",
+					"cs.orw.CATEGORIESEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_active_img()": {
+			"Syntax": "**.lb_active_img**( *cE_categories* : cs.orw.CATEGORIESEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_categories",
+					"cs.orw.CATEGORIESEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_orwells_count()": {
+			"Syntax": "**.lb_orwells_count**( *cE_categories* : cs.orw.CATEGORIESEntity )->vL_count : Integer",
+			"Params": [
+				[
+					"cE_categories",
+					"cs.orw.CATEGORIESEntity",
+					"->"
+				],
+				[
+					"vL_count",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *c4E_entity* : 4D.Entity )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"ZEN__FORM_MOVE": {
+		"form_animate()": {
+			"Syntax": "**.form_animate**( *vR_coef* : Real )",
+			"Params": [
+				[
+					"vR_coef",
+					"Real",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"form_move_worker()": {
+			"Syntax": "**.form_move_worker**( *vJ_animate* : Object; *vL_winRef* : Integer )",
+			"Params": [
+				[
+					"vJ_animate",
+					"Object",
+					"->"
+				],
+				[
+					"vL_winRef",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"TESSERAC_LIST": {
+		"tesserac_draw()": {
+			"Syntax": "**.tesserac_draw**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_polygons_colors_img()": {
+			"Syntax": "**.lb_polygons_colors_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isLines2_img()": {
+			"Syntax": "**.lb_isLines2_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_lines_colors_img()": {
+			"Syntax": "**.lb_lines_colors_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isCube2_img()": {
+			"Syntax": "**.lb_isCube2_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isPoly2_img()": {
+			"Syntax": "**.lb_isPoly2_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isCube1_img()": {
+			"Syntax": "**.lb_isCube1_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_bkg_color_img()": {
+			"Syntax": "**.lb_bkg_color_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isPoly1_img()": {
+			"Syntax": "**.lb_isPoly1_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isLines1_img()": {
+			"Syntax": "**.lb_isLines1_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_cube_colors_img()": {
+			"Syntax": "**.lb_cube_colors_img**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *cE_TESSERAC* : cs.orw.TESSERACEntity )->vJ_meta : Object",
+			"Params": [
+				[
+					"cE_TESSERAC",
+					"cs.orw.TESSERACEntity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"ZENH_EXTRAS": {
+		"extra_item_new()": {
+			"Syntax": "**.extra_item_new**( *vC_aj_items* : Collection; *vT_label* : Text; *vL_label* : Integer; *vT_tag* : Text; *vT_menu* : Text; *vL_style* : Integer )->vJ_item : Object",
+			"Params": [
+				[
+					"vC_aj_items",
+					"Collection",
+					"->"
+				],
+				[
+					"vT_label",
+					"Text",
+					"->"
+				],
+				[
+					"vL_label",
+					"Integer",
+					"->"
+				],
+				[
+					"vT_tag",
+					"Text",
+					"->"
+				],
+				[
+					"vT_menu",
+					"Text",
+					"->"
+				],
+				[
+					"vL_style",
+					"Integer",
+					"->"
+				],
+				[
+					"vJ_item",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"extra_btn_new()": {
+			"Syntax": "**.extra_btn_new**( *vC_aj_extra_btns* : Collection; *vT_label* : Text; *vL_label* : Integer; *vT_tag* : Text; *vV_action* : Variant )->vJ_extra_btn : Object",
+			"Params": [
+				[
+					"vC_aj_extra_btns",
+					"Collection",
+					"->"
+				],
+				[
+					"vT_label",
+					"Text",
+					"->"
+				],
+				[
+					"vL_label",
+					"Integer",
+					"->"
+				],
+				[
+					"vT_tag",
+					"Text",
+					"->"
+				],
+				[
+					"vV_action",
+					"Variant",
+					"->"
+				],
+				[
+					"vJ_extra_btn",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get_extras_btns()": {
+			"Syntax": "**.get_extras_btns**()->vC_aj_extra_btns : Collection",
+			"Params": [
+				[
+					"vC_aj_extra_btns",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"l_winRef": {
+			"Syntax": "l_winRef : Integer"
+		},
+		"t_path": {
+			"Syntax": "t_path : Text"
+		},
+		"l_label": {
+			"Syntax": "l_label : Integer"
+		},
+		"aj_extra_btns": {
+			"Syntax": "aj_extra_btns : Collection"
+		}
+	},
+	"ORWELLS_LIST": {
+		"lb_colors_img()": {
+			"Syntax": "**.lb_colors_img**( *cE_orwells* : cs.orw.ORWELLSEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_orwells",
+					"cs.orw.ORWELLSEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_active_img()": {
+			"Syntax": "**.lb_active_img**( *cE_orwells* : cs.orw.ORWELLSEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_orwells",
+					"cs.orw.ORWELLSEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *c4E_entity* : 4D.Entity )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"MULTIPLAY_LIST": {
+		"multiplay_draw()": {
+			"Syntax": "**.multiplay_draw**( *cE_MULTIPLAY* : cs.orw.MULTIPLAYEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_MULTIPLAY",
+					"cs.orw.MULTIPLAYEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *cE_MULTIPLAY* : cs.orw.MULTIPLAYEntity )->vJ_meta : Object",
+			"Params": [
+				[
+					"cE_MULTIPLAY",
+					"cs.orw.MULTIPLAYEntity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"ZEN__DELETE": {},
+	"FRAGMENTS_LIST": {
+		"lb_colors_img()": {
+			"Syntax": "**.lb_colors_img**( *cE_fragments* : cs.orw.FRAGMENTSEntity )->vO_img : Picture",
+			"Params": [
+				[
+					"cE_fragments",
+					"cs.orw.FRAGMENTSEntity",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *c4E_entity* : 4D.Entity )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__TABLES_LIST"
+	},
+	"ZENH_PALETTE": {
+		"palette_menu_get()": {
+			"Syntax": "**.palette_menu_get**( *is_record* : Boolean )->vJ_palette_menu : Object",
+			"Params": [
+				[
+					"is_record",
+					"Boolean",
+					"->"
+				],
+				[
+					"vJ_palette_menu",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"io_palette_get()": {
+			"Syntax": "**.io_palette_get**()->vJ_io_palette : Object",
+			"Params": [
+				[
+					"vJ_io_palette",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"palette_do()": {
+			"Syntax": "**.palette_do**( *is_record* : Boolean )->isOk : Boolean",
+			"Params": [
+				[
+					"is_record",
+					"Boolean",
+					"->"
+				],
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"ZENH_INFOS": {
+		"do_menu()": {
+			"Syntax": "**.do_menu**( *is_record* : Boolean )->isOk : Variant",
+			"Params": [
+				[
+					"is_record",
+					"Boolean",
+					"->"
+				],
+				[
+					"isOk",
+					"Variant",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"FRAGMENTS_RECORD": {
+		"translate()": {
+			"Syntax": "**.translate**( *vT_source* : Text; *vT_ISO2_source* : Text; *vT_ISO2_target* : Text )->vT_answer : Text",
+			"Params": [
+				[
+					"vT_source",
+					"Text",
+					"->"
+				],
+				[
+					"vT_ISO2_source",
+					"Text",
+					"->"
+				],
+				[
+					"vT_ISO2_target",
+					"Text",
+					"->"
+				],
+				[
+					"vT_answer",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"ORWELLS_update()": {
+			"Syntax": "**.ORWELLS_update**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_save()": {
+			"Syntax": "**.record_save**( *c4E_entity* : 4D.Entity )",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"ORWELLS_bind()": {
+			"Syntax": "**.ORWELLS_bind**( *cE_ORWELLS* : cs.orw.ORWELLSEntity )",
+			"Params": [
+				[
+					"cE_ORWELLS",
+					"cs.orw.ORWELLSEntity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"OG_IMPORTER": {
+		"get_aj_fields()": {
+			"Syntax": "**.get_aj_fields**( *vL_table* : Integer )->vC_aj_fields : Collection",
+			"Params": [
+				[
+					"vL_table",
+					"Integer",
+					"->"
+				],
+				[
+					"vC_aj_fields",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"import_table()": {
+			"Syntax": "**.import_table**( *c4Fo_export* : 4D.Folder; *vT_table* : Text; *vJ_table_options* : Object )",
+			"Params": [
+				[
+					"c4Fo_export",
+					"4D.Folder",
+					"->"
+				],
+				[
+					"vT_table",
+					"Text",
+					"->"
+				],
+				[
+					"vJ_table_options",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"packs_record()": {
+			"Syntax": "**.packs_record**( *vJ_record* : Object )",
+			"Params": [
+				[
+					"vJ_record",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"meta_colors()": {
+			"Syntax": "**.meta_colors**( *vJ_meta* : Object; *vL_colors* : Integer; *vT_column* : Text )",
+			"Params": [
+				[
+					"vJ_meta",
+					"Object",
+					"->"
+				],
+				[
+					"vL_colors",
+					"Integer",
+					"->"
+				],
+				[
+					"vT_column",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"key_links_affect()": {
+			"Syntax": "**.key_links_affect**( *c4E_entity* : 4D.Entity )",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"meta_create()": {
+			"Syntax": "**.meta_create**( *c4E_entity* : 4D.Entity; *vJ_record* : Object )->vJ_meta : Object",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"vJ_record",
+					"Object",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info()": {
+			"Syntax": "**.lb_meta_info**( *vJ_table* : Object )->vJ_meta : Object",
+			"Params": [
+				[
+					"vJ_table",
+					"Object",
+					"->"
+				],
+				[
+					"vJ_meta",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_load()": {
+			"Syntax": "**.lb_load**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"clean_table()": {
+			"Syntax": "**.clean_table**( *vT_table* : Text )",
+			"Params": [
+				[
+					"vT_table",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"key_links_clean()": {
+			"Syntax": "**.key_links_clean**( *c4E_entity* : 4D.Entity )",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"relate_table()": {
+			"Syntax": "**.relate_table**( *vT_table* : Text )",
+			"Params": [
+				[
+					"vT_table",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**( *vL_event_code* : Integer )",
+			"Params": [
+				[
+					"vL_event_code",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"YIN_YANG_RECORD": {
+		"square()": {
+			"Syntax": "**.square**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"stop_timer()": {
+			"Syntax": "**.stop_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"redraw()": {
+			"Syntax": "**.redraw**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"form_events()": {
+			"Syntax": "**.form_events**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"start_timer()": {
+			"Syntax": "**.start_timer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_save()": {
+			"Syntax": "**.record_save**( *c4E_entity* : 4D.Entity )",
+			"Params": [
+				[
+					"c4E_entity",
+					"4D.Entity",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"do_touched()": {
+			"Syntax": "**.do_touched**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"record_touched()": {
+			"Syntax": "**.record_touched**( *c4E_record* : 4D.Entity )->is_touched : Boolean",
+			"Params": [
+				[
+					"c4E_record",
+					"4D.Entity",
+					"->"
+				],
+				[
+					"is_touched",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_checkout()": {
+			"Syntax": "**.record_checkout**()->isOk : Boolean",
+			"Params": [
+				[
+					"isOk",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"record_load_upd()": {
+			"Syntax": "**.record_load_upd**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"_inheritedFrom_": "ZEN__RECORD"
+	},
+	"ZEN__TABLES_LIST": {
+		"lb_font_style()": {
+			"Syntax": "**.lb_font_style**( *vT_function* : Text )",
+			"Params": [
+				[
+					"vT_function",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"meta_style()": {
+			"Syntax": "**.meta_style**( *vJ_meta* : Object; *vL_style* : Integer; *vT_column* : Text )",
+			"Params": [
+				[
+					"vJ_meta",
+					"Object",
+					"->"
+				],
+				[
+					"vL_style",
+					"Integer",
+					"->"
+				],
+				[
+					"vT_column",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_font_color()": {
+			"Syntax": "**.lb_font_color**( *vT_function* : Text )",
+			"Params": [
+				[
+					"vT_function",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_bkg_color()": {
+			"Syntax": "**.lb_bkg_color**( *vT_function* : Text )",
+			"Params": [
+				[
+					"vT_function",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"meta_colors()": {
+			"Syntax": "**.meta_colors**( *vJ_meta* : Object; *vL_colors* : Integer; *vT_column* : Text )",
+			"Params": [
+				[
+					"vJ_meta",
+					"Object",
+					"->"
+				],
+				[
+					"vL_colors",
+					"Integer",
+					"->"
+				],
+				[
+					"vT_column",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"get_icon_img()": {
+			"Syntax": "**.get_icon_img**( *is_value* : Boolean; *vL_colorsRow* : Integer; *vL_shape* : Integer; *vL_size* : Integer )->vO_img : Picture",
+			"Params": [
+				[
+					"is_value",
+					"Boolean",
+					"->"
+				],
+				[
+					"vL_colorsRow",
+					"Integer",
+					"->"
+				],
+				[
+					"vL_shape",
+					"Integer",
+					"->"
+				],
+				[
+					"vL_size",
+					"Integer",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_isNokOk_img()": {
+			"Syntax": "**.lb_isNokOk_img**( *is_value* : Boolean; *vL_colorsRow* : Integer; *vL_shape* : Integer; *vL_size* : Integer )->vO_img : Picture",
+			"Params": [
+				[
+					"is_value",
+					"Boolean",
+					"->"
+				],
+				[
+					"vL_colorsRow",
+					"Integer",
+					"->"
+				],
+				[
+					"vL_shape",
+					"Integer",
+					"->"
+				],
+				[
+					"vL_size",
+					"Integer",
+					"->"
+				],
+				[
+					"vO_img",
+					"Picture",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"meta_row()": {
+			"Syntax": "**.meta_row**( *vJ_meta* : Object; *is_unselectable* : Boolean; *is_disabled* : Boolean )",
+			"Params": [
+				[
+					"vJ_meta",
+					"Object",
+					"->"
+				],
+				[
+					"is_unselectable",
+					"Boolean",
+					"->"
+				],
+				[
+					"is_disabled",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_initialize()": {
+			"Syntax": "**.lb_initialize**( *vJ_data* : Object; *is_local* : Boolean )",
+			"Params": [
+				[
+					"vJ_data",
+					"Object",
+					"->"
+				],
+				[
+					"is_local",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"lb_meta_info_set()": {
+			"Syntax": "**.lb_meta_info_set**( *vT_function* : Text )",
+			"Params": [
+				[
+					"vT_function",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"get_columns()": {
+			"Syntax": "**.get_columns**( *vT_ordaPath* : Text )->vC_indices : Collection",
+			"Params": [
+				[
+					"vT_ordaPath",
+					"Text",
+					"->"
+				],
+				[
+					"vC_indices",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get_column()": {
+			"Syntax": "**.get_column**( *vT_ordaPath* : Text )->vT_column : Text",
+			"Params": [
+				[
+					"vT_ordaPath",
+					"Text",
+					"->"
+				],
+				[
+					"vT_column",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	}
+}

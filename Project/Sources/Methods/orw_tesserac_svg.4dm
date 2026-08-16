@@ -18,7 +18,7 @@ var $is_lines2; $is_bkg; $is_bkg_ellipse : Boolean
 var $vJ_polygons; $vJ_cube; $vJ_lines; $vJ_bkg : Object
 
 
-$vL_scale:=app__storage_prefs.l_scale
+$vL_scale:=orw__storage_prefs.l_scale
 $vL_svg_width*=$vL_scale
 $vL_svg_height*=$vL_scale
 $vR_stroke_coef:=$vL_scale*$vL_svg_width/2000

@@ -4,7 +4,7 @@ var $vJ_prefs : Object
 $vJ_prefs:=zen__storage_prefs
 
 Use ($vJ_prefs)
-	$vJ_prefs.j_app:=app__storage_prefs()  // Host app
+	$vJ_prefs.j_app:=orw__storage_prefs()  // Host app
 	$vJ_prefs.is_pretty:=True:C214  // json's files  formatting
 	
 	//If (False)

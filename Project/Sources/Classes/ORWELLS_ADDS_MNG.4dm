@@ -69,7 +69,7 @@ Function _yinYang_change()
 	// *****
 	// *
 Function _get_separator()->$vC_at_separators : Collection
-	$vC_at_separators:=app__storage_menuBtns().m_separators.at_separators
+	$vC_at_separators:=orw__storage_menuBtns().m_separators.at_separators
 	
 	
 Function _get_separator_char($is_lines : Boolean; $is_stringify : Boolean)->$vT_separator : Text

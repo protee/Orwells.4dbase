@@ -6,7 +6,7 @@ var $vL_no_process : Integer
 var $vT_method_name : Text
 
 If ($is_process)
-	$vC_aj_TablesClass:=app__storage_stuff.aj_TablesClass  // => put in zen
+	$vC_aj_TablesClass:=orw__storage_stuff.aj_TablesClass  // => put in zen
 	zen_relations_form($vC_aj_TablesClass)
 	
 Else 
