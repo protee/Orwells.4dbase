@@ -10,6 +10,14 @@
 // *
 // *****
 
+property t_property; t_widget; t_value; t_UID; t_internal : Text
+property p_value : Pointer
+property l_border; l_value : Integer
+property is_editing; is_new : Boolean
+property j_value : Object
+property d_value : Date
+property h_value : Time
+
 Class constructor($vT_widget : Text)
 	If ($vT_widget#"")
 		This:C1470.__vJ_params($vT_widget)

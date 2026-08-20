@@ -33,6 +33,10 @@ Function do_menu($is_record : Boolean)->$isOk
 					: ($vT_param3="license")
 						This:C1470._do_license()
 						
+					: ($vT_param3="syntaxEN")
+						$vT_param3:=$vC_at_answer.shift()  // Remove "xxx"
+						This:C1470._syntaxEN($vC_at_answer)
+						
 				End case 
 				
 			: ($vT_action="ogToolsSuite")
@@ -66,6 +70,7 @@ Function _get_menu_vC($is_record : Boolean)->$vC_menu : Collection
 	$vC_menu.push(This:C1470._menu_item(True:C214; "Documentation"; "doc"; Formula:C1597($vJ_this._do_doc())))
 	$vC_menu.push(This:C1470._menu_item())
 	$vC_menu.push(This:C1470._menu_item(True:C214; "ogToolsSuite©"; "ogToolsSuite"; Formula:C1597($vJ_this._ogToolsSuite($1)); Formula:C1597($vJ_this._ogToolsSuite_menu($1; $2))))
+	//$vC_menu.push(This._menu_item(True; "syntaxEN"; "syntaxEN"; Formula($vJ_this._syntaxEN($1)); Formula($vJ_this._syntaxEN_menu($1; $2))))
 	
 	
 	// *****
@@ -82,6 +87,27 @@ Function _ogToolsSuite_menu($vT_refMenu : Text; $vJ_menu : Object)
 	
 Function _ogToolsSuite($vC_at_answer : Collection)
 	wox_4Dpop_execute($vC_at_answer)
+	
+	
+Function _syntaxEN_menu($vT_refMenu : Text; $vJ_menu : Object)
+	var $is_inline : Boolean
+	var $vT_prefix : Text
+	$vT_prefix:=$vJ_menu.t_menu
+	$is_inline:=False:C215
+	cs:C1710.wox.syntaxEN.me.get_menu_apps($vT_prefix+"."; True:C214; $vT_prefix+" ©"; $vT_refMenu; $is_inline)
+	
+Function _syntaxEN($vC_at_answer : Collection)
+	//wox_4Dpop_execute($vC_at_answer)
+	var $vT_syntaxEN; $vT_app; $vT_dummy : Text
+	$vT_app:=$vC_at_answer.shift()
+	$vT_dummy:=$vC_at_answer.shift()
+	$vT_syntaxEN:=$vC_at_answer.join(".")
+	If ($vT_syntaxEN="")
+		wox_syntaxEN_mng($vT_app)
+	Else 
+		SET TEXT TO PASTEBOARD:C523($vT_syntaxEN)
+		cs:C1710.wox.SOUNDS.me.play_glop()
+	End if 
 	
 	
 Function _tables_menu($vT_refMenu : Text; $vJ_menu : Object)
