@@ -36,7 +36,7 @@ Function do_menu($is_record : Boolean)->$isOk
 				End case 
 				
 			: ($vT_action="ogToolsSuite")
-				This:C1470._ogDevTools($vC_at_answer)
+				This:C1470._ogToolsSuite($vC_at_answer)
 				
 			: ($vT_action="tables")
 				This:C1470._tables($vT_param)
@@ -65,22 +65,22 @@ Function _get_menu_vC($is_record : Boolean)->$vC_menu : Collection
 	$vC_menu.push(This:C1470._menu_item(True:C214; "About "+$vT_base_name; "about"; Formula:C1597($vJ_this._z_about())))
 	$vC_menu.push(This:C1470._menu_item(True:C214; "Documentation"; "doc"; Formula:C1597($vJ_this._do_doc())))
 	$vC_menu.push(This:C1470._menu_item())
-	$vC_menu.push(This:C1470._menu_item(True:C214; "ogToolsSuite©"; "ogToolsSuite"; Formula:C1597($vJ_this._ogDevTools($1)); Formula:C1597($vJ_this._ogDevTools_menu($1; $2))))
+	$vC_menu.push(This:C1470._menu_item(True:C214; "ogToolsSuite©"; "ogToolsSuite"; Formula:C1597($vJ_this._ogToolsSuite($1)); Formula:C1597($vJ_this._ogToolsSuite_menu($1; $2))))
 	
 	
 	// *****
 	// *
 	//Function _execute($vJ_menu : Object)
 	
-Function _ogDevTools_menu($vT_refMenu : Text; $vJ_menu : Object)
+Function _ogToolsSuite_menu($vT_refMenu : Text; $vJ_menu : Object)
 	var $vT_prefix : Text
 	$vT_prefix:=$vJ_menu.t_menu
 	//wox_4dPop_menu($vT_prefix; $vT_refMenu)
 	$is_inline:=False:C215
-	wox_4dPop_apps_menu($vT_prefix; ".xxx"; $vT_prefix+" ©"; $vT_refMenu; $is_inline)  //; True)
+	wox_4dPop_apps_menu($vT_prefix+".xxx."; False:C215; $vT_prefix+" ©"; $vT_refMenu; $is_inline)  //; True)
 	
 	
-Function _ogDevTools($vC_at_answer : Collection)
+Function _ogToolsSuite($vC_at_answer : Collection)
 	wox_4Dpop_execute($vC_at_answer)
 	
 	

@@ -53,7 +53,7 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 			var $vC_at_answer : Collection
 			var $is_record : Boolean
 			$vT_prefix:=$vT_item  //"ogToolsSuite"
-			$vT_refMenu:=wox_4dPop_apps_menu($vT_prefix; ".xxx")
+			$vT_refMenu:=wox_4dPop_apps_menu($vT_prefix+".xxx.")
 			$vT_answerMenu:=Dynamic pop up menu:C1006($vT_refMenu)
 			RELEASE MENU:C978($vT_refMenu)
 			$isOk:=(""#$vT_answerMenu)
