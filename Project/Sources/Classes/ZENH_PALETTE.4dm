@@ -45,8 +45,31 @@ Function _actions($vJ_palette_item : Object; $vT_item : Text)->$isOk : Boolean
 		: ($vT_item="doc")
 			app_docBox_form()
 			
-			//: ($vT_item="zen4DPop")
-			//zen_4DPop()
+			
+		: ($vT_item="syntaxEN")
+			var $vT_syntaxEN; $vT_app; $vT_dummy : Text
+			$vT_prefix:=$vT_item  //"syntaxEN"
+			$is_inline:=False:C215
+			$vT_refMenu:=cs:C1710.wox.syntaxEN.me.get_menu_apps($vT_prefix+"."; True:C214; $vT_prefix+" ©")
+			$vT_answerMenu:=Dynamic pop up menu:C1006($vT_refMenu)
+			RELEASE MENU:C978($vT_refMenu)
+			$isOk:=(""#$vT_answerMenu)
+			If ($isOk)
+				$vC_at_answer:=Split string:C1554($vT_answerMenu; ".")
+				$vT_action:=$vC_at_answer.shift()
+				If ($vT_action=$vT_prefix)
+					$vT_app:=$vC_at_answer.shift()
+					$vT_dummy:=$vC_at_answer.shift()
+					$vT_syntaxEN:=$vC_at_answer.join(".")
+					If ($vT_syntaxEN="")
+						wox_syntaxEN_mng($vT_app)
+					Else 
+						SET TEXT TO PASTEBOARD:C523($vT_syntaxEN)
+						cs:C1710.wox.SOUNDS.me.play_glop()
+					End if 
+				End if 
+			End if 
+			
 			
 		: ($vT_item="ogToolsSuite")
 			var $vT_prefix; $vT_refMenu; $vT_answerMenu; $vT_action; $vT_param : Text
@@ -165,7 +188,7 @@ Function palette_menu_get($is_record : Boolean)->$vJ_palette_menu : Object
 		$vC_aj_items.push(This:C1470._menu_item($vT_base_name; "product"; $vt_path_product; 1.8))
 		$vC_aj_items.push(This:C1470._menu_item())
 		$vC_aj_items.push(This:C1470._menu_item("ogToolsSuite ©"; "ogToolsSuite"; $vT_path_icons))
-		//$vC_aj_items.push(This._menu_item("About"; "about"; $vT_path_icons))
+		$vC_aj_items.push(This:C1470._menu_item("syntaxEN ©"; "syntaxEN"; $vT_path_icons))
 		$vC_aj_items.push(This:C1470._menu_item("Documentation"; "doc"; $vT_path_icons))
 		$vC_aj_items.push(This:C1470._menu_item("Relations"; "relations"; $vT_path_icons))
 	End if 
