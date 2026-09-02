@@ -352,7 +352,7 @@ Function _play_svg($vJ_cards : Object; $cES_FRAGMENTS : cs:C1710.FRAGMENTSSelect
 	var $vO_img : Picture
 	var $vP_canvas; $vP_oT_txt : Pointer
 	var $vR_ratio; $vR_coef : Real
-	var $vT_svg_id; $vT_color_bkg_svg; $vT_object; $vT_font_name; $vT_key_stroke_svg; $vT_key_fill_svg; $vT_pat_stroke_svg; $vT_pat_fill_svg; $vT_patt_yin_name; $vT_patt_yang_name; $txt; $vT_g; $vT_idText; $vT_path; $vT_svg_b; $vT_dot_stroke_svg; $vT_dot_fill_svg; $vT_patt_name : Text
+	var $vT_svg_id; $vT_color_bkg_svg; $vT_object; $vT_font_face; $vT_key_stroke_svg; $vT_key_fill_svg; $vT_pat_stroke_svg; $vT_pat_fill_svg; $vT_patt_yin_name; $vT_patt_yang_name; $txt; $vT_g; $vT_idText; $vT_path; $vT_svg_b; $vT_dot_stroke_svg; $vT_dot_fill_svg; $vT_patt_name : Text
 	
 	$vP_canvas:=OBJECT Get pointer:C1124(Object named:K67:5; "canvas")
 	$vP_oT_txt:=OBJECT Get pointer:C1124(Object named:K67:5; "oT_txt")
@@ -378,7 +378,7 @@ Function _play_svg($vJ_cards : Object; $cES_FRAGMENTS : cs:C1710.FRAGMENTSSelect
 		$vT_object:=SVG_New_rect($vT_svg_id; 0; 0; $vL_svg_width; $vL_svg_height; 0; 0; $vT_color_bkg_svg; $vT_color_bkg_svg; 0)
 	End if 
 	
-	$vT_font_name:="Calibri"
+	$vT_font_face:=wox_font_face_default()
 	
 	$vR_coef:=$vL_svg_width/1400
 	$vL_font_size:=80*$vR_coef
@@ -423,13 +423,13 @@ Function _play_svg($vJ_cards : Object; $cES_FRAGMENTS : cs:C1710.FRAGMENTSSelect
 		$vT_g:=SVG_New_group($vT_svg_id)
 		$vT_object:=SVG_New_rect($vT_g; $vL_x_left; $vL_y_top_truth; $vL_card_width; $vL_card_height; 0; 0; $vT_key_stroke_svg; "url(#"+$vT_patt_yin_name+")"; 2*$vL_svg_scale)
 		
-		OBJECT SET FONT:C164($vP_oT_txt->; $vT_font_name)
+		OBJECT SET FONT:C164($vP_oT_txt->; $vT_font_face)
 		OBJECT SET FONT SIZE:C165($vP_oT_txt->; $vL_font_size)
 		OBJECT SET FONT STYLE:C166($vP_oT_txt->; $vL_font_style)
 		$vP_oT_txt->:=$txt
 		OBJECT GET BEST SIZE:C717($vP_oT_txt->; $vL_width; $vL_height; $vL_text_width)
 		$y:=$vL_y_top_truth+(($vL_card_height-$vL_height)/2)
-		$vT_idText:=SVG_New_textArea($vT_g; $txt; $vL_x_left+$vL_padding; $y; $vL_text_width; $vL_height; $vT_font_name; $vL_font_size; $vL_font_style; $vL_font_align)
+		$vT_idText:=SVG_New_textArea($vT_g; $txt; $vL_x_left+$vL_padding; $y; $vL_text_width; $vL_height; $vT_font_face; $vL_font_size; $vL_font_style; $vL_font_align)
 		SVG_SET_FONT_COLOR($vT_idText; $vT_key_stroke_svg; $vT_key_stroke_svg)
 		SVG_SET_TEXT_RENDERING($vT_idText; "geometricPrecision")
 		SVG_SET_ID($vT_g; "id_truth")
@@ -451,13 +451,13 @@ Function _play_svg($vJ_cards : Object; $cES_FRAGMENTS : cs:C1710.FRAGMENTSSelect
 		$vT_object:=SVG_New_rect($vT_g; $vL_x_left; $vL_y_top_wood; $vL_card_width; $vL_card_height; 0; 0; $vT_key_stroke_svg; "url(#"+$vT_patt_yang_name+")"; 2*$vL_svg_scale)
 		//$idText:=SVG_New_textArea ($g;$txt;$x_left+$padding;$y_top_wood+$padding;$text_width;$text_height;$font_name;$font_size;$font_style;$font_align)
 		
-		OBJECT SET FONT:C164($vP_oT_txt->; $vT_font_name)
+		OBJECT SET FONT:C164($vP_oT_txt->; $vT_font_face)
 		OBJECT SET FONT SIZE:C165($vP_oT_txt->; $vL_font_size)
 		OBJECT SET FONT STYLE:C166($vP_oT_txt->; $vL_font_style)
 		$vP_oT_txt->:=$txt
 		OBJECT GET BEST SIZE:C717($vP_oT_txt->; $vL_width; $vL_height; $vL_text_width)
 		$y:=$vL_y_top_wood+(($vL_card_height-$vL_height)/2)
-		$vT_idText:=SVG_New_textArea($vT_g; $txt; $vL_x_left+$vL_padding; $y; $vL_text_width; $vL_text_height; $vT_font_name; $vL_font_size; $vL_font_style; $vL_font_align)
+		$vT_idText:=SVG_New_textArea($vT_g; $txt; $vL_x_left+$vL_padding; $y; $vL_text_width; $vL_text_height; $vT_font_face; $vL_font_size; $vL_font_style; $vL_font_align)
 		
 		SVG_SET_FONT_COLOR($vT_idText; $vT_key_stroke_svg; $vT_key_stroke_svg)
 		SVG_SET_TEXT_RENDERING($vT_idText; "geometricPrecision")
@@ -539,7 +539,7 @@ Function _play_svg($vJ_cards : Object; $cES_FRAGMENTS : cs:C1710.FRAGMENTSSelect
 		$x2:=$x1+$vL_padding
 		$y2:=$y1+$vL_padding
 		$vT_object:=SVG_New_circle($vT_g; $x2; $y2; $vL_size1*0.8; $vT_dot_stroke_svg; $vT_dot_fill_svg; 1*$vL_svg_scale)
-		$vT_idText:=SVG_New_text($vT_g; String:C10($idx+1); $x2; $y2-$vL_offset; $vT_font_name; $vL_size1; Bold:K14:2; 3; $vT_dot_stroke_svg)
+		$vT_idText:=SVG_New_text($vT_g; String:C10($idx+1); $x2; $y2-$vL_offset; $vT_font_face; $vL_size1; Bold:K14:2; 3; $vT_dot_stroke_svg)
 		SVG_SET_TEXT_RENDERING($vT_idText; "geometricPrecision")
 		SVG_SET_ID($vT_g; "no_"+String:C10($idx))
 		$x:=$x+$vL_card_w

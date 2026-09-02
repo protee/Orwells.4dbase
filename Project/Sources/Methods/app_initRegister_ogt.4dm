@@ -55,6 +55,7 @@ $isOk:=wqr_initRegister()
 $isOk:=wob_initRegister()
 $isOk:=zen_initRegister()  // zen_Nucleus init
 
+wox_font_face_default("Calibri")
 
 // ***** Define a specific path for the sound's file prefs from this host
 // *
